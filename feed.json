@@ -1,7 +1,7 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "jackfei的博客",
-    "description": "demo博客",
+    "title": "杰克飞的博客",
+    "description": "一个用Hexo搭建的个人博客",
     "home_page_url": "http://example.com",
     "items": [
         {
