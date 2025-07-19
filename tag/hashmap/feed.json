@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "杰克飞的博客",
+    "title": "杰克飞的博客 • All posts by \"hashmap\" tag",
     "description": "一个用Hexo搭建的个人博客",
     "home_page_url": "http://example.com",
     "items": [
@@ -13,17 +13,6 @@
             "tags": [
                 "HashMap",
                 "扩容"
-            ]
-        },
-        {
-            "id": "http://example.com/2025/07/18/hello-world/",
-            "url": "http://example.com/2025/07/18/hello-world/",
-            "title": "你好，世界",
-            "date_published": "2025-07-18T09:26:05.873Z",
-            "content_html": "<p>摘要：<br>欢迎使用 Hexo！这是你的第一篇博客文章。</p>\n<span id=\"more\"></span>\n\n<p>正文：<br>你好，欢迎来到我的个人博客！</p>\n<p>这是我用 Hexo 搭建的第一个博客页面。你可以在这里记录生活、学习、技术心得等内容。</p>\n<p>如果你遇到任何问题，可以查阅 Hexo 官方文档，或者在评论区留言交流。</p>\n<p>祝你写作愉快！</p>\n",
-            "tags": [
-                "Hexo",
-                "博客"
             ]
         }
     ]

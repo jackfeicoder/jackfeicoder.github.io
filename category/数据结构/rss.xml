@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>杰克飞的博客</title>
+        <title>杰克飞的博客 • Posts by &#34;数据结构&#34; category</title>
         <link>http://example.com</link>
         <description>一个用Hexo搭建的个人博客</description>
         <language>zh-CN</language>
@@ -28,22 +28,6 @@
 &lt;li&gt;&lt;strong&gt;迁移元素&lt;/strong&gt;，遍历旧数组的每个槽位，重新计算索引后放到新数组。如果槽位是单个节点，通过 &lt;code&gt;e.hash &amp;amp; (newCap新容量 - 1)&lt;/code&gt; 计算新索引；如果是红黑树节点，拆分处理。如果是链表节点，将链表拆分为&lt;strong&gt;低位链&lt;/strong&gt;和&lt;strong&gt;高位链&lt;/strong&gt;，避免重新哈希带来性能损耗。如果 &lt;code&gt;e.hash &amp;amp; oldCap == 0&lt;/code&gt;（元素哈希值与上旧容量等于0）就是低位链，索引不变。如果不为0，就是高位链，索引变成 旧索引 + 旧容量。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;通过这种方式，HashMap 能够高效地完成扩容和数据迁移，保证查询和插入的性能。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2025/07/18/hello-world/</guid>
-            <title>你好，世界</title>
-            <link>http://example.com/2025/07/18/hello-world/</link>
-            <category>Hexo</category>
-            <category>博客</category>
-            <pubDate>Fri, 18 Jul 2025 17:26:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;摘要：&lt;br&gt;欢迎使用 Hexo！这是你的第一篇博客文章。&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;p&gt;正文：&lt;br&gt;你好，欢迎来到我的个人博客！&lt;/p&gt;
-&lt;p&gt;这是我用 Hexo 搭建的第一个博客页面。你可以在这里记录生活、学习、技术心得等内容。&lt;/p&gt;
-&lt;p&gt;如果你遇到任何问题，可以查阅 Hexo 官方文档，或者在评论区留言交流。&lt;/p&gt;
-&lt;p&gt;祝你写作愉快！&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
