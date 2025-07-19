@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;实现原理&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2025-07-19T08:55:58.136Z</updated>
+    <category term="ArrayList" />
+    <category term="实现原理" />
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="put方法" />
+    <category term="扩容" />
+    <entry>
+        <id>http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
+        <title>ArrayList底层的实现原理是什么？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;ArrayList底层是动态数组，支持自动扩容和高效随机访问。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;ArrayList底层是一个&lt;strong&gt;动态数组&lt;/strong&gt;，&lt;strong&gt;初始容量是0&lt;/strong&gt;，&lt;strong&gt;当第一次添加数据&lt;/strong&gt;才会初始化容量为10，&lt;strong&gt;扩容&lt;/strong&gt;是原来容量的1.5倍，每次扩容都需要&lt;strong&gt;拷贝数组&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;添加数据时：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断元素个数size+1后是否大于总容量，如果大于就调用grow方法扩容，把旧数组拷贝到扩容后的新数组中，再把新元素放在size位置上，返回true。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ArrayList list&amp;#x3D;new ArrayList(10)中的list扩容几次?&lt;/strong&gt;&lt;br&gt;声明和实例了一个ArrayList，指定了容量为10，未扩容。构造方法中传参initCapcity,是多少就初始化多少容量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何实现数组和List之间的转换？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数组转List:           &lt;strong&gt;Arrays工具类的asList方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;List转数组，使用&lt;strong&gt;List的toArray方法&lt;/strong&gt;。无参toArray方法返回 Object数组，传入初始化长度的数组对象，返回该对象数组。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;面试官再问：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用Arrays.asList转List后，如果修改了数组内容，list受影响吗？&lt;/li&gt;
+&lt;li&gt;List用toArray转数组后，如果修改了List内容，数组受影响吗？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;数组转List受影响&lt;/strong&gt;，因为它的&lt;strong&gt;底层使用的Arrays类中的一个内部类ArrayList来构造的集合&lt;/strong&gt;，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，&lt;strong&gt;最终指向的都是同一个内存地址&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List转数组不受影响&lt;/strong&gt;，在底层是它是进行了数组的拷贝。&lt;/p&gt;
+</content>
+        <category term="ArrayList" />
+        <category term="实现原理" />
+        <updated>2025-07-19T08:55:58.136Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</id>
+        <title>HashMap实现原理？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前是数组+链表，之后是数组+链表+红黑树。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前，是数组+链表。之后是数组+链表+红黑树。&lt;/p&gt;
+&lt;p&gt;存储元素时，利用key的hashCode重新hash计算出元素在数组中的下标，如果两个key出现了相同的hash值（哈希冲突）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果key相同，覆盖原值。&lt;/li&gt;
+&lt;li&gt;key不同，把key-value放入链表或红黑树中，链表的长度大于8并且数组长度大于64时链表转成红黑树。扩容resize时，红黑树的结点≤6就退化成链表。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。&lt;/p&gt;
+&lt;p&gt;源码：初始容量16，加载因子0.75，扩容&amp;#x3D;之积。懒加载，不初始化容量。&lt;/p&gt;
+</content>
+        <category term="实现原理" />
+        <category term="HashMap" />
+        <updated>2025-07-19T08:55:15.936Z</updated>
+    </entry>
+</feed>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;数据结构&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2025-07-19T08:55:58.136Z</updated>
+    <category term="ArrayList" />
+    <category term="实现原理" />
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="put方法" />
+    <category term="扩容" />
+    <entry>
+        <id>http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
+        <title>ArrayList底层的实现原理是什么？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;ArrayList底层是动态数组，支持自动扩容和高效随机访问。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;ArrayList底层是一个&lt;strong&gt;动态数组&lt;/strong&gt;，&lt;strong&gt;初始容量是0&lt;/strong&gt;，&lt;strong&gt;当第一次添加数据&lt;/strong&gt;才会初始化容量为10，&lt;strong&gt;扩容&lt;/strong&gt;是原来容量的1.5倍，每次扩容都需要&lt;strong&gt;拷贝数组&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;添加数据时：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断元素个数size+1后是否大于总容量，如果大于就调用grow方法扩容，把旧数组拷贝到扩容后的新数组中，再把新元素放在size位置上，返回true。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ArrayList list&amp;#x3D;new ArrayList(10)中的list扩容几次?&lt;/strong&gt;&lt;br&gt;声明和实例了一个ArrayList，指定了容量为10，未扩容。构造方法中传参initCapcity,是多少就初始化多少容量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何实现数组和List之间的转换？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数组转List:           &lt;strong&gt;Arrays工具类的asList方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;List转数组，使用&lt;strong&gt;List的toArray方法&lt;/strong&gt;。无参toArray方法返回 Object数组，传入初始化长度的数组对象，返回该对象数组。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;面试官再问：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用Arrays.asList转List后，如果修改了数组内容，list受影响吗？&lt;/li&gt;
+&lt;li&gt;List用toArray转数组后，如果修改了List内容，数组受影响吗？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;数组转List受影响&lt;/strong&gt;，因为它的&lt;strong&gt;底层使用的Arrays类中的一个内部类ArrayList来构造的集合&lt;/strong&gt;，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，&lt;strong&gt;最终指向的都是同一个内存地址&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List转数组不受影响&lt;/strong&gt;，在底层是它是进行了数组的拷贝。&lt;/p&gt;
+</content>
+        <category term="ArrayList" />
+        <category term="实现原理" />
+        <updated>2025-07-19T08:55:58.136Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+        <title>HashSet，HashTable与HashMap的区别</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;对比HashSet、HashMap、HashTable三者的底层结构、线程安全性、常用方法及应用场景。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;数据结构上HashSet底层是一个HashMap，只存储键不存储值；HashMap是一个哈希表，由数组+链表+红黑树组成，存储键值对。HashSet不能重复，只允许一个null元素，实现了Set接口；HashMap键只有一个null值，值可以有多个，实现Map接口，它们性能一致。&lt;/p&gt;
+&lt;p&gt;常用方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HashSet：add, remove, contains, size&lt;/li&gt;
+&lt;li&gt;HashMap: put(), get(), remove(), containsKey(), size()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HashTable 是 Java 早期的线程安全哈希表实现，因同步开销大、设计局限性（如不支持 null、扩容效率低），已逐渐被淘汰。HashMap 作为更现代的实现，性能更优、功能更灵活，而多线程场景下推荐使用 ConcurrentHashMap（分段锁优化，性能远超 HashTable）。&lt;/p&gt;
+&lt;p&gt;你能自己设计实现一个 HashMap 吗？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一步，实现一个 hash 函数，对键的 hashCode 进行扰动&lt;/li&gt;
+&lt;li&gt;第二步，实现一个拉链法的方法来解决哈希冲突&lt;/li&gt;
+&lt;li&gt;第三步，扩容后，重新计算哈希值，将元素放到新的数组中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;讲讲 LinkedHashMap 怎么实现有序的？&lt;br&gt;在 HashMap 的基础上维护了一个双向链表，通过 before 和 after 标识前置节点和后置节点。从而实现插入和访问有序。&lt;/p&gt;
+</content>
+        <category term="HashMap" />
+        <category term="HashSet" />
+        <category term="HashTable" />
+        <updated>2025-07-19T08:55:48.002Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/</id>
+        <title>HashMap的put方法的具体流程？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;详细解析HashMap的put方法执行流程，包括哈希计算、索引定位、冲突处理、链表与红黑树转换等。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;&lt;strong&gt;第一步：检查数组是否为空&lt;/strong&gt;&lt;br&gt;首次&lt;code&gt;put&lt;/code&gt;时，调用&lt;code&gt;resize()&lt;/code&gt;初始化数组，默认容量为16，负载因子为0.75。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二步：计算键的哈希值&lt;/strong&gt;&lt;br&gt;具体是将键的hashCode异或hashCode右移16位的值。这是为了减少哈希冲突，让元素分布更均匀。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第三步：根据键的哈希值计算数组索引&lt;/strong&gt;&lt;br&gt;具体是将键的哈希值与上数组长度-1（等价于哈希值模数组长度，因为与运算的效率更高，所以用与运算代替模运算，但前提是数组长度是2的N次幂）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第四步：检查数组索引对应槽位的情况&lt;/strong&gt;&lt;br&gt;如果为空，直接插入；如果不为空，用equals判断对应位置键是否已经存在，存在则更新值。如果对应位置是红黑树，插入树结点。是链表就遍历链表逐个用equals检查键是否存在，存在则更新值，遍历完后发现不存在则插入链表尾部，如果链表长度≥8且数组长度≥64，链表转成红黑树。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只重写元素的equals方法没重写hashCode，put的时候会发生什么？&lt;/strong&gt;&lt;br&gt;如果只重写equals方法，没有重写hashCode方法，那么会导致equals相等的两个对象，hashCode不相等，这样的话，两个对象会被put到数组中不同的位置，导致get的时候，无法获取到正确的值。&lt;/p&gt;
+</content>
+        <category term="HashMap" />
+        <category term="put方法" />
+        <updated>2025-07-19T08:55:24.937Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</id>
+        <title>HashMap实现原理？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前是数组+链表，之后是数组+链表+红黑树。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前，是数组+链表。之后是数组+链表+红黑树。&lt;/p&gt;
+&lt;p&gt;存储元素时，利用key的hashCode重新hash计算出元素在数组中的下标，如果两个key出现了相同的hash值（哈希冲突）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果key相同，覆盖原值。&lt;/li&gt;
+&lt;li&gt;key不同，把key-value放入链表或红黑树中，链表的长度大于8并且数组长度大于64时链表转成红黑树。扩容resize时，红黑树的结点≤6就退化成链表。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。&lt;/p&gt;
+&lt;p&gt;源码：初始容量16，加载因子0.75，扩容&amp;#x3D;之积。懒加载，不初始化容量。&lt;/p&gt;
+</content>
+        <category term="实现原理" />
+        <category term="HashMap" />
+        <updated>2025-07-19T08:55:15.936Z</updated>
+    </entry>
+</feed>

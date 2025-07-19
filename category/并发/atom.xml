@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;并发&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2025-07-19T08:55:34.536Z</updated>
+    <category term="ArrayList" />
+    <category term="实现原理" />
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="put方法" />
+    <category term="扩容" />
+    <entry>
+        <id>http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/</id>
+        <title>HashMap 是线程安全的吗？</title>
+        <link rel="alternate" href="http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/"/>
+        <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap 不是线程安全的，多线程环境下可能出现死循环、数据丢失等问题。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;正文：&lt;br&gt;HashMap 不是线程安全的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;JDK7 中的 HashMap 使用的是&lt;strong&gt;头插法&lt;/strong&gt;来处理链表，在&lt;strong&gt;多线程环境下扩容会出现环形链表，造成死循环&lt;/strong&gt;。JDK 8 时通过&lt;strong&gt;尾插法修复&lt;/strong&gt;了这个问题，扩容时会保持链表原来的顺序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;多线程在进行 &lt;strong&gt;put 元素&lt;/strong&gt;的时候，&lt;strong&gt;可能会导致元素丢失&lt;/strong&gt;。因为put操作&lt;strong&gt;不是原子的&lt;/strong&gt;。当多个线程同时检查到 “槽位为空” 或 “键不存在” 时，可能都决定写入，这样就可能导致元素&lt;strong&gt;先插入的元素被覆盖而丢失&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;put 和 get 并发时，可能导致 get 为 null。线程 1 执行 put 时，因为元&lt;strong&gt;素个数超出阈值而扩容&lt;/strong&gt;，线程 2 此时执行 get 就可能获取不到元素。线程 1 执行完 table &amp;#x3D; newTab 之后，线程 2 中的 table 已经发生了改变，线程 2 去 get 索引元素可能就 get 不到了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="HashMap" />
+        <category term="线程安全" />
+        <updated>2025-07-19T08:55:34.536Z</updated>
+    </entry>
+</feed>
