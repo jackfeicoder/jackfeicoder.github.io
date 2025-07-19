@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>杰克飞的博客 • Posts by &#34;数据结构&#34; category</title>
+    <title>杰克飞的博客 • Posts by &#34;集合&#34; category</title>
     <link href="http://example.com" />
     <updated>2025-07-19T08:28:05.350Z</updated>
     <category term="Hexo" />
