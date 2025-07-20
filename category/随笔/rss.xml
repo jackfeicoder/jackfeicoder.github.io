@@ -12,10 +12,10 @@
         <category>HashMap</category>
         <category>线程安全</category>
         <category>put方法</category>
-        <category>HashSet</category>
-        <category>HashTable</category>
         <category>Hexo</category>
         <category>博客</category>
+        <category>HashSet</category>
+        <category>HashTable</category>
         <category>扩容</category>
         <item>
             <guid isPermalink="true">http://example.com/2025/07/18/hello-world/</guid>
