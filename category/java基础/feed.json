@@ -11,8 +11,8 @@
             "date_published": "2025-07-19T08:55:58.136Z",
             "content_html": "<p>摘要：<br>ArrayList底层是动态数组，支持自动扩容和高效随机访问。</p>\n<span id=\"more\"></span>\n\n<p>正文：<br>ArrayList底层是一个<strong>动态数组</strong>，<strong>初始容量是0</strong>，<strong>当第一次添加数据</strong>才会初始化容量为10，<strong>扩容</strong>是原来容量的1.5倍，每次扩容都需要<strong>拷贝数组</strong>。</p>\n<p>添加数据时：</p>\n<ul>\n<li>判断元素个数size+1后是否大于总容量，如果大于就调用grow方法扩容，把旧数组拷贝到扩容后的新数组中，再把新元素放在size位置上，返回true。</li>\n</ul>\n<p><strong>ArrayList list&#x3D;new ArrayList(10)中的list扩容几次?</strong><br>声明和实例了一个ArrayList，指定了容量为10，未扩容。构造方法中传参initCapcity,是多少就初始化多少容量。</p>\n<p><strong>如何实现数组和List之间的转换？</strong></p>\n<ul>\n<li>数组转List:           <strong>Arrays工具类的asList方法</strong></li>\n<li>List转数组，使用<strong>List的toArray方法</strong>。无参toArray方法返回 Object数组，传入初始化长度的数组对象，返回该对象数组。</li>\n</ul>\n<p>面试官再问：</p>\n<ol>\n<li>用Arrays.asList转List后，如果修改了数组内容，list受影响吗？</li>\n<li>List用toArray转数组后，如果修改了List内容，数组受影响吗？</li>\n</ol>\n<p><strong>数组转List受影响</strong>，因为它的<strong>底层使用的Arrays类中的一个内部类ArrayList来构造的集合</strong>，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，<strong>最终指向的都是同一个内存地址</strong>。</p>\n<p><strong>List转数组不受影响</strong>，在底层是它是进行了数组的拷贝。</p>\n",
             "tags": [
-                "ArrayList",
-                "实现原理"
+                "实现原理",
+                "ArrayList"
             ]
         },
         {
