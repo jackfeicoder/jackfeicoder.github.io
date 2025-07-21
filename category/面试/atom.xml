@@ -1,30 +1,24 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>杰克飞的博客 • Posts by &#34;博客&#34; tag</title>
-        <link>http://example.com</link>
-        <description>一个用Hexo搭建的个人博客</description>
-        <language>zh-CN</language>
-        <pubDate>Mon, 21 Jul 2025 00:00:00 +0800</pubDate>
-        <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0800</lastBuildDate>
-        <category>HashMap</category>
-        <category>线程安全</category>
-        <category>HashSet</category>
-        <category>HashTable</category>
-        <category>Hexo</category>
-        <category>博客</category>
-        <category>实现原理</category>
-        <category>ArrayList</category>
-        <category>put方法</category>
-        <category>扩容</category>
-        <item>
-            <guid isPermalink="true">http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-            <title>java高频面试题</title>
-            <link>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-            <category>Hexo</category>
-            <category>博客</category>
-            <pubDate>Mon, 21 Jul 2025 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象，多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;面试&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2025-07-20T16:00:00.000Z</updated>
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="实现原理" />
+    <category term="ArrayList" />
+    <category term="put方法" />
+    <category term="扩容" />
+    <entry>
+        <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <title>java高频面试题</title>
+        <link rel="alternate" href="http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象，多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等,&lt;/p&gt;
 &lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean.引用数据类型有类，数组和接口&lt;/p&gt;
 &lt;h3 id=&#34;3-面向对象编程有哪些特性？&#34;&gt;&lt;a href=&#34;#3-面向对象编程有哪些特性？&#34; class=&#34;headerlink&#34; title=&#34;3. 面向对象编程有哪些特性？&#34;&gt;&lt;/a&gt;3. 面向对象编程有哪些特性？&lt;/h3&gt;&lt;p&gt;封装、继承和多态。封装就是把一些属性和方法捆在一起形成一个类，我们可以实例化这个类变成对象，对象可以设置和获取属性，调用方法。开发中就是对象之间的交互。继承就是子类获得父类的所有属性和方法，子类还可以进行扩充或者方法重写。多态就是java运行时可以根据对象类型产生不同的结果。子类需要继承父类并重写父类方法，父类引用指向子类对象。&lt;/p&gt;
 &lt;h3 id=&#34;4-抽象类和接口有什么区别？&#34;&gt;&lt;a href=&#34;#4-抽象类和接口有什么区别？&#34; class=&#34;headerlink&#34; title=&#34;4. 抽象类和接口有什么区别？&#34;&gt;&lt;/a&gt;4. 抽象类和接口有什么区别？&lt;/h3&gt;&lt;p&gt;一个类只能继承一个抽象类；但一个类可以实现多个接口。比如我们创建线程类的时候一般用实现 Runnable 接口的方式，这样线程类还可以继承其他类，而不单单是 Thread 类。抽象类符合 is-a 的关系，而接口更像是 has-a 的关系。比如说一个类可以序列化的时候，它只需要实现 Serializable 接口，代表它有这个功能，而不是继承一个序列化类。&lt;/p&gt;
@@ -49,23 +43,9 @@
 &lt;li&gt;代表性产品&lt;/li&gt;
 &lt;li&gt;历年薪资&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2025/07/18/hello-world/</guid>
-            <title>你好，世界</title>
-            <link>http://example.com/2025/07/18/hello-world/</link>
-            <category>Hexo</category>
-            <category>博客</category>
-            <pubDate>Fri, 18 Jul 2025 17:26:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;摘要：&lt;br&gt;欢迎使用 Hexo！这是你的第一篇博客文章。&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;p&gt;正文：&lt;br&gt;你好，欢迎来到我的个人博客！&lt;/p&gt;
-&lt;p&gt;这是我用 Hexo 搭建的第一个博客页面。你可以在这里记录生活、学习、技术心得等内容。&lt;/p&gt;
-&lt;p&gt;如果你遇到任何问题，可以查阅 Hexo 官方文档，或者在评论区留言交流。&lt;/p&gt;
-&lt;p&gt;祝你写作愉快！&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="Hexo" />
+        <category term="博客" />
+        <updated>2025-07-20T16:00:00.000Z</updated>
+    </entry>
+</feed>

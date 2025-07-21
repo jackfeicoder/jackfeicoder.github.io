@@ -3,17 +3,51 @@
     <id>http://example.com</id>
     <title>杰克飞的博客 • Posts by &#34;hexo&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2025-07-18T09:26:05.873Z</updated>
-    <category term="ArrayList" />
-    <category term="实现原理" />
+    <updated>2025-07-20T16:00:00.000Z</updated>
     <category term="HashMap" />
     <category term="线程安全" />
     <category term="HashSet" />
     <category term="HashTable" />
-    <category term="put方法" />
     <category term="Hexo" />
     <category term="博客" />
+    <category term="实现原理" />
+    <category term="ArrayList" />
+    <category term="put方法" />
     <category term="扩容" />
+    <entry>
+        <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <title>java高频面试题</title>
+        <link rel="alternate" href="http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象，多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等,&lt;/p&gt;
+&lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean.引用数据类型有类，数组和接口&lt;/p&gt;
+&lt;h3 id=&#34;3-面向对象编程有哪些特性？&#34;&gt;&lt;a href=&#34;#3-面向对象编程有哪些特性？&#34; class=&#34;headerlink&#34; title=&#34;3. 面向对象编程有哪些特性？&#34;&gt;&lt;/a&gt;3. 面向对象编程有哪些特性？&lt;/h3&gt;&lt;p&gt;封装、继承和多态。封装就是把一些属性和方法捆在一起形成一个类，我们可以实例化这个类变成对象，对象可以设置和获取属性，调用方法。开发中就是对象之间的交互。继承就是子类获得父类的所有属性和方法，子类还可以进行扩充或者方法重写。多态就是java运行时可以根据对象类型产生不同的结果。子类需要继承父类并重写父类方法，父类引用指向子类对象。&lt;/p&gt;
+&lt;h3 id=&#34;4-抽象类和接口有什么区别？&#34;&gt;&lt;a href=&#34;#4-抽象类和接口有什么区别？&#34; class=&#34;headerlink&#34; title=&#34;4. 抽象类和接口有什么区别？&#34;&gt;&lt;/a&gt;4. 抽象类和接口有什么区别？&lt;/h3&gt;&lt;p&gt;一个类只能继承一个抽象类；但一个类可以实现多个接口。比如我们创建线程类的时候一般用实现 Runnable 接口的方式，这样线程类还可以继承其他类，而不单单是 Thread 类。抽象类符合 is-a 的关系，而接口更像是 has-a 的关系。比如说一个类可以序列化的时候，它只需要实现 Serializable 接口，代表它有这个功能，而不是继承一个序列化类。&lt;/p&gt;
+&lt;h3 id=&#34;5-和-equals-的区别？&#34;&gt;&lt;a href=&#34;#5-和-equals-的区别？&#34; class=&#34;headerlink&#34; title=&#34;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&#34;&gt;&lt;/a&gt;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&lt;/h3&gt;&lt;h2 id=&#34;开放性问题&#34;&gt;&lt;a href=&#34;#开放性问题&#34; class=&#34;headerlink&#34; title=&#34;开放性问题&#34;&gt;&lt;/a&gt;开放性问题&lt;/h2&gt;&lt;h3 id=&#34;1-先做个简单的自我介绍吧！&#34;&gt;&lt;a href=&#34;#1-先做个简单的自我介绍吧！&#34; class=&#34;headerlink&#34; title=&#34;1. 先做个简单的自我介绍吧！&#34;&gt;&lt;/a&gt;1. 先做个简单的自我介绍吧！&lt;/h3&gt;&lt;p&gt;面试官您好！我叫郝泽飞，是哈尔滨工程大学计算机专业的学生，现在在读研一，在校期间，我成绩专业排名前10%,大学期间参加了多个竞赛并取得奖项，通过了英语四六级。技术方面，大一期间我学习了计算机的基础知识，像数据结构，C++和JAVA的基础语法，大二以后开始学Java技术栈，比如Spring Boot、MyBatis-Plus、MySQL、Redis、RabbitMQ等，后来又做了一些项目，微服务架构的Pm-hub,大模型应用开发的派聪明。生活中我是一个比较积极乐观的人，我非常期待能在贵公司的开发岗位中，将所学的技术应用于实际业务，我的介绍完毕，谢谢！&lt;/p&gt;
+&lt;h3 id=&#34;2-说说你的这个pm-hub项目吧？&#34;&gt;&lt;a href=&#34;#2-说说你的这个pm-hub项目吧？&#34; class=&#34;headerlink&#34; title=&#34;2. 说说你的这个pm-hub项目吧？&#34;&gt;&lt;/a&gt;2. 说说你的这个pm-hub项目吧？&lt;/h3&gt;&lt;p&gt;（项目背景、解决问题、职责任务。2项目使用的技术栈、技术架构、是否使用微服务，项目具体功能细节。技术具体实现细节。项目存在的问题和完善解决方案&lt;br&gt;项目具体功能的优化（如查询是在数据库中扫表查询吗）项目最有挑战的模块，如何解决，项目增大10倍的qps，如何设计？项目上线后出现频繁fullGc，怎么解决？）&lt;br&gt;好的，这个项目是我（跟室友&amp;#x2F;同学&amp;#x2F;老师一起做的。&amp;#x2F;参考开源项目做的一个二次开发），做这个项目是为了。。。，考虑到—所以项目中用到了***，，当时我负责的部分是。发现速度&amp;#x2F;可用性不够，进行了SQL优化，分布式锁，seata事务,skywalking监控等。第二个项目是。。，因为最近AI比较流行，我就想学一些新技术，跟上时代的步伐，这个项目是参考开源项目，用了，，技术栈，实现了，，功能，优化，解决，，问题。以上是我的项目介绍。&lt;/p&gt;
+&lt;h3 id=&#34;3-项目中遇到最大的困难？怎么解决的？&#34;&gt;&lt;a href=&#34;#3-项目中遇到最大的困难？怎么解决的？&#34; class=&#34;headerlink&#34; title=&#34;3. 项目中遇到最大的困难？怎么解决的？&#34;&gt;&lt;/a&gt;3. 项目中遇到最大的困难？怎么解决的？&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&#34;4-平时是怎么学习的？&#34;&gt;&lt;a href=&#34;#4-平时是怎么学习的？&#34; class=&#34;headerlink&#34; title=&#34;4. 平时是怎么学习的？&#34;&gt;&lt;/a&gt;4. 平时是怎么学习的？&lt;/h3&gt;&lt;p&gt;比如我学一门新技术吧，首先看官方文档，如果晦涩难懂就会找教程&amp;#x2F;视频，还会使用AI工具（豆包，chatGPT）详细解释辅助理解，然后做个demo用到项目中，大学期间我大多是在开源社区学习还有网课。&lt;/p&gt;
+&lt;h3 id=&#34;5-人生发展、最近五年职业规划&#34;&gt;&lt;a href=&#34;#5-人生发展、最近五年职业规划&#34; class=&#34;headerlink&#34; title=&#34;5. 人生发展、最近五年职业规划&#34;&gt;&lt;/a&gt;5. 人生发展、最近五年职业规划&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&#34;6-什么时候能到岗？&#34;&gt;&lt;a href=&#34;#6-什么时候能到岗？&#34; class=&#34;headerlink&#34; title=&#34;6. 什么时候能到岗？&#34;&gt;&lt;/a&gt;6. 什么时候能到岗？&lt;/h3&gt;&lt;h3 id=&#34;7-薪资要求？&#34;&gt;&lt;a href=&#34;#7-薪资要求？&#34; class=&#34;headerlink&#34; title=&#34;7. 薪资要求？&#34;&gt;&lt;/a&gt;7. 薪资要求？&lt;/h3&gt;&lt;h2 id=&#34;反问：&#34;&gt;&lt;a href=&#34;#反问：&#34; class=&#34;headerlink&#34; title=&#34;反问：&#34;&gt;&lt;/a&gt;反问：&lt;/h2&gt;&lt;h3 id=&#34;一面&#34;&gt;&lt;a href=&#34;#一面&#34; class=&#34;headerlink&#34; title=&#34;一面&#34;&gt;&lt;/a&gt;一面&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;部门主营业务和使用的技术栈是什么？&lt;/li&gt;
+&lt;li&gt;您觉得我的专业能力有哪些需要提升的&lt;/li&gt;
+&lt;li&gt;刚才关于xx问题，我想问下您的思路。&lt;/li&gt;
+&lt;li&gt;面试一般多久会出通知和结果呢？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二面&#34;&gt;&lt;a href=&#34;#二面&#34; class=&#34;headerlink&#34; title=&#34;二面&#34;&gt;&lt;/a&gt;二面&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;面试候选人，尤其是校招生的时候，最看重什么？&lt;/li&gt;
+&lt;li&gt;您对进入您团队的成员的要求是什么？或者说需要怎样的品质胜任这个职位？&lt;/li&gt;
+&lt;li&gt;我很好奇职位的晋升机制和发展路径。公司对信任的培养是怎么样的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;HR面-三面&#34;&gt;&lt;a href=&#34;#HR面-三面&#34; class=&#34;headerlink&#34; title=&#34;HR面&amp;#x2F;三面&#34;&gt;&lt;/a&gt;HR面&amp;#x2F;三面&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;企业文化&lt;/li&gt;
+&lt;li&gt;代表性产品&lt;/li&gt;
+&lt;li&gt;历年薪资&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Hexo" />
+        <category term="博客" />
+        <updated>2025-07-20T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2025/07/18/hello-world/</id>
         <title>你好，世界</title>
