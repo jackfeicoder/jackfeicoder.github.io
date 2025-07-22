@@ -4,39 +4,63 @@
     <title>杰克飞的博客 • Posts by &#34;java基础&#34; category</title>
     <link href="http://example.com" />
     <updated>2025-07-20T16:00:00.000Z</updated>
+    <category term="ArrayList" />
+    <category term="实现原理" />
     <category term="HashMap" />
     <category term="线程安全" />
+    <category term="put方法" />
     <category term="HashSet" />
     <category term="HashTable" />
     <category term="Hexo" />
     <category term="博客" />
-    <category term="实现原理" />
-    <category term="ArrayList" />
-    <category term="put方法" />
     <category term="扩容" />
     <entry>
         <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java高频面试题</title>
         <link rel="alternate" href="http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-        <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象，多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等,&lt;/p&gt;
-&lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean.引用数据类型有类，数组和接口&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象、多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等。&lt;/p&gt;
+&lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean。引用数据类型有类，数组和接口。&lt;/p&gt;
 &lt;h3 id=&#34;3-面向对象编程有哪些特性？&#34;&gt;&lt;a href=&#34;#3-面向对象编程有哪些特性？&#34; class=&#34;headerlink&#34; title=&#34;3. 面向对象编程有哪些特性？&#34;&gt;&lt;/a&gt;3. 面向对象编程有哪些特性？&lt;/h3&gt;&lt;p&gt;封装、继承和多态。封装就是把一些属性和方法捆在一起形成一个类，我们可以实例化这个类变成对象，对象可以设置和获取属性，调用方法。开发中就是对象之间的交互。继承就是子类获得父类的所有属性和方法，子类还可以进行扩充或者方法重写。多态就是java运行时可以根据对象类型产生不同的结果。子类需要继承父类并重写父类方法，父类引用指向子类对象。&lt;/p&gt;
 &lt;h3 id=&#34;4-抽象类和接口有什么区别？&#34;&gt;&lt;a href=&#34;#4-抽象类和接口有什么区别？&#34; class=&#34;headerlink&#34; title=&#34;4. 抽象类和接口有什么区别？&#34;&gt;&lt;/a&gt;4. 抽象类和接口有什么区别？&lt;/h3&gt;&lt;p&gt;一个类只能继承一个抽象类；但一个类可以实现多个接口。比如我们创建线程类的时候一般用实现 Runnable 接口的方式，这样线程类还可以继承其他类，而不单单是 Thread 类。抽象类符合 is-a 的关系，而接口更像是 has-a 的关系。比如说一个类可以序列化的时候，它只需要实现 Serializable 接口，代表它有这个功能，而不是继承一个序列化类。&lt;/p&gt;
-&lt;h3 id=&#34;5-和-equals-的区别？&#34;&gt;&lt;a href=&#34;#5-和-equals-的区别？&#34; class=&#34;headerlink&#34; title=&#34;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&#34;&gt;&lt;/a&gt;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&lt;/h3&gt;&lt;h2 id=&#34;开放性问题&#34;&gt;&lt;a href=&#34;#开放性问题&#34; class=&#34;headerlink&#34; title=&#34;开放性问题&#34;&gt;&lt;/a&gt;开放性问题&lt;/h2&gt;&lt;h3 id=&#34;1-先做个简单的自我介绍吧！&#34;&gt;&lt;a href=&#34;#1-先做个简单的自我介绍吧！&#34; class=&#34;headerlink&#34; title=&#34;1. 先做个简单的自我介绍吧！&#34;&gt;&lt;/a&gt;1. 先做个简单的自我介绍吧！&lt;/h3&gt;&lt;p&gt;面试官您好！我叫郝泽飞，是哈尔滨工程大学计算机专业的学生，现在在读研一，在校期间，我成绩专业排名前10%,大学期间参加了多个竞赛并取得奖项，通过了英语四六级。技术方面，大一期间我学习了计算机的基础知识，像数据结构，C++和JAVA的基础语法，大二以后开始学Java技术栈，比如Spring Boot、MyBatis-Plus、MySQL、Redis、RabbitMQ等，后来又做了一些项目，微服务架构的Pm-hub,大模型应用开发的派聪明。生活中我是一个比较积极乐观的人，我非常期待能在贵公司的开发岗位中，将所学的技术应用于实际业务，我的介绍完毕，谢谢！&lt;/p&gt;
-&lt;h3 id=&#34;2-说说你的这个pm-hub项目吧？&#34;&gt;&lt;a href=&#34;#2-说说你的这个pm-hub项目吧？&#34; class=&#34;headerlink&#34; title=&#34;2. 说说你的这个pm-hub项目吧？&#34;&gt;&lt;/a&gt;2. 说说你的这个pm-hub项目吧？&lt;/h3&gt;&lt;p&gt;（项目背景、解决问题、职责任务。2项目使用的技术栈、技术架构、是否使用微服务，项目具体功能细节。技术具体实现细节。项目存在的问题和完善解决方案&lt;br&gt;项目具体功能的优化（如查询是在数据库中扫表查询吗）项目最有挑战的模块，如何解决，项目增大10倍的qps，如何设计？项目上线后出现频繁fullGc，怎么解决？）&lt;br&gt;好的，这个项目是我（跟室友&amp;#x2F;同学&amp;#x2F;老师一起做的。&amp;#x2F;参考开源项目做的一个二次开发），做这个项目是为了。。。，考虑到—所以项目中用到了***，，当时我负责的部分是。发现速度&amp;#x2F;可用性不够，进行了SQL优化，分布式锁，seata事务,skywalking监控等。第二个项目是。。，因为最近AI比较流行，我就想学一些新技术，跟上时代的步伐，这个项目是参考开源项目，用了，，技术栈，实现了，，功能，优化，解决，，问题。以上是我的项目介绍。&lt;/p&gt;
+&lt;h3 id=&#34;5-和-equals-的区别？&#34;&gt;&lt;a href=&#34;#5-和-equals-的区别？&#34; class=&#34;headerlink&#34; title=&#34;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&#34;&gt;&lt;/a&gt;5. &amp;#x3D;&amp;#x3D;和 equals 的区别？&lt;/h3&gt;&lt;p&gt;&amp;#x3D;&amp;#x3D; 操作符和 equals() 方法用于比较两个对象：&amp;#x3D;&amp;#x3D;比较两个对象的引用，也就是说在内存中是不是同一份数据。对于基本数据类型（如 int, double, char 等），&amp;#x3D;&amp;#x3D; 比较的是值是否相等。equals比较的是两个对象的内容是否相等，默认跟&amp;#x3D;&amp;#x3D;相同，我们一般会对他重写来用于比较值（比如属性）是否相同而不是引用。&lt;/p&gt;
+&lt;h3 id=&#34;6-为什么重写-equals-时必须重写-hashCode-⽅法？&#34;&gt;&lt;a href=&#34;#6-为什么重写-equals-时必须重写-hashCode-⽅法？&#34; class=&#34;headerlink&#34; title=&#34;6. 为什么重写 equals 时必须重写 hashCode ⽅法？&#34;&gt;&lt;/a&gt;6. 为什么重写 equals 时必须重写 hashCode ⽅法？&lt;/h3&gt;&lt;p&gt;因为基于哈希的集合类（如 HashMap）需要使用hashCode和equals方法来存储和查找对象。存储时首先根据键的hashCode计算出在数组中的存储位置，每个位置可以存单个值、链表和红黑树，如果没有重写hashCode方法，两个相同的键可能出现不同的hashCode导致它们被存在数组中的不同位置，获取时就发生错误。发生哈希冲突时，键会被存在数组的同一个桶中，通过链表和红黑树解决哈希冲突问题，发生哈希冲突的桶中元素的hashCode值相同，必须再用equals比较值才能找出对应元素，如果没有重写equals()方法就找不到需要的元素。&lt;/p&gt;
+&lt;h3 id=&#34;7-String-和-StringBuilder、StringBuffer-的区别？&#34;&gt;&lt;a href=&#34;#7-String-和-StringBuilder、StringBuffer-的区别？&#34; class=&#34;headerlink&#34; title=&#34;7. String 和 StringBuilder、StringBuffer 的区别？&#34;&gt;&lt;/a&gt;7. String 和 StringBuilder、StringBuffer 的区别？&lt;/h3&gt;&lt;p&gt;它们都是用于处理字符串的，String底层用了final修饰是不可变的，每次修改都会创建一个新对象，开销很大，如果要频繁修改字符串可以用StringBuilder，它是在原对象上修改。StringBuffer跟StringBuilder相似，但是它的方法上都加了 synchronized 关键字，是线程安全的，这在单线程下效率比较低。&lt;/p&gt;
+&lt;h3 id=&#34;8-Java-中异常处理体系&#34;&gt;&lt;a href=&#34;#8-Java-中异常处理体系&#34; class=&#34;headerlink&#34; title=&#34;8. Java 中异常处理体系?&#34;&gt;&lt;/a&gt;8. Java 中异常处理体系?&lt;/h3&gt;&lt;p&gt;主要有两大类，错误和异常，错误指的是程序无法处理的严重错误，比如内存溢出，栈溢出，这些错误通常与 JVM 的运行状态有关。异常分为编译时异常和运行时异常，编译时异常可以被try-catch捕获处理或者throws抛出，比如IOException、SQLException，运行时异常通常是代码逻辑错误，比如数组越界，空指针等。&lt;/p&gt;
+&lt;h3 id=&#34;9-BIO、NIO、AIO-之间的区别？&#34;&gt;&lt;a href=&#34;#9-BIO、NIO、AIO-之间的区别？&#34; class=&#34;headerlink&#34; title=&#34;9. BIO、NIO、AIO 之间的区别？&#34;&gt;&lt;/a&gt;9. BIO、NIO、AIO 之间的区别？&lt;/h3&gt;&lt;p&gt;BIO：采用阻塞式 I&amp;#x2F;O 模型，基于字节流或字符流文件读写，基于 Socket 和 ServerSocket 进行网络通信，适用于连接数较少的场景，每个连接，都需要创建一个单独的线程来处理读写操作。&lt;br&gt;NIO：采用非阻塞 I&amp;#x2F;O 模型，线程在等待 I&amp;#x2F;O 时可执行其他任务，主要用在网络编程中，服务器可以用一个线程处理多个客户端连接，通过 Selector 监听多个 Channel 来实现多路复用，适用于连接数多但连接时间短的场景。&lt;br&gt;AIO：使用异步 I&amp;#x2F;O 模型，线程发起 I&amp;#x2F;O 请求后立即返回，不需要等待，当 I&amp;#x2F;O 操作完成时通过回调函数通知线程，适用于连接数多且连接时间长的场景。&lt;/p&gt;
+&lt;h3 id=&#34;10-🌟什么是反射？应用？原理？&#34;&gt;&lt;a href=&#34;#10-🌟什么是反射？应用？原理？&#34; class=&#34;headerlink&#34; title=&#34;10. 🌟什么是反射？应用？原理？&#34;&gt;&lt;/a&gt;10. 🌟什么是反射？应用？原理？&lt;/h3&gt;&lt;p&gt;反射就是在运行时动态地获取类的信息，然后使用它的属性和方法的技术。Spring 框架动态加载和管理 Bean、AOP的动态代理，还有Junit测试框架这些都用到了反射，我们可以用Class.forName通过类名获取一个类，然后调用newInstance方法创建实例对象，getMethod，invoke方法可以获取和调用方法，getDeclaredField可以获取属性，对于私有属性可以调用setAccessible(true); 让它可见。原理就是Java 程序的执行分为编译和运行两步，编译之后会生成字节码(.class)文件，JVM 进行类加载的时候，会加载字节码文件，将类型相关的所有信息加载进方法区，反射就是去获取这些信息，然后进行各种操作。&lt;/p&gt;
+&lt;h2 id=&#34;Java集合&#34;&gt;&lt;a href=&#34;#Java集合&#34; class=&#34;headerlink&#34; title=&#34;Java集合&#34;&gt;&lt;/a&gt;Java集合&lt;/h2&gt;&lt;h3 id=&#34;1-常见集合有哪些？&#34;&gt;&lt;a href=&#34;#1-常见集合有哪些？&#34; class=&#34;headerlink&#34; title=&#34;1. 常见集合有哪些？&#34;&gt;&lt;/a&gt;1. 常见集合有哪些？&lt;/h3&gt;&lt;p&gt;集合有两大类，Collection 接口和Map 接口。Collection 接口下有List、Set,和Queue, List包含有序可重复的元素。实现类包括 ArrayList、LinkedList。Set是无序不重复的集合。实现类包括 HashSet、LinkedHashSet、TreeSet 等。Queue是队列。实现类包括 PriorityQueue、ArrayDeque 等。Map 是表示键值对的集合。键不能重复。实现类包括 HashMap、LinkedHashMap、TreeMap 等。&lt;/p&gt;
+&lt;h3 id=&#34;2-哪些是线程安全的容器？&#34;&gt;&lt;a href=&#34;#2-哪些是线程安全的容器？&#34; class=&#34;headerlink&#34; title=&#34;2. 哪些是线程安全的容器？&#34;&gt;&lt;/a&gt;2. 哪些是线程安全的容器？&lt;/h3&gt;&lt;p&gt;像 Vector、Hashtable、ConcurrentHashMap、CopyOnWriteArrayList、ConcurrentLinkedQueue、ArrayBlockingQueue、LinkedBlockingQueue 都是线程安全的。&lt;/p&gt;
+&lt;h3 id=&#34;3-ArrayList-和-LinkedList-有什么区别？&#34;&gt;&lt;a href=&#34;#3-ArrayList-和-LinkedList-有什么区别？&#34; class=&#34;headerlink&#34; title=&#34;3. ArrayList 和 LinkedList 有什么区别？&#34;&gt;&lt;/a&gt;3. ArrayList 和 LinkedList 有什么区别？&lt;/h3&gt;&lt;p&gt;ArrayList 底层是动态数组，内存是连续的，查找快，增删慢，适合经常通过索引访问，在末尾增删的场景，LinkedList 底层是双向链表，查找慢，增删快，适合频繁增删的场景。&lt;/p&gt;
+&lt;h3 id=&#34;4-ArrayList-的扩容机制了解吗？底层实现？&#34;&gt;&lt;a href=&#34;#4-ArrayList-的扩容机制了解吗？底层实现？&#34; class=&#34;headerlink&#34; title=&#34;4. ArrayList 的扩容机制了解吗？底层实现？&#34;&gt;&lt;/a&gt;4. ArrayList 的扩容机制了解吗？底层实现？&lt;/h3&gt;&lt;p&gt;当往 ArrayList 中添加元素时，会先检查是否需要扩容，如果当前容量+1 超过数组长度，就调用grow方法生成一个1.5倍容量的新数组，然后拷贝元素到新数组中。&lt;/p&gt;
+&lt;h3 id=&#34;5-ArrayList-怎么序列化的知道吗？&#34;&gt;&lt;a href=&#34;#5-ArrayList-怎么序列化的知道吗？&#34; class=&#34;headerlink&#34; title=&#34;5. ArrayList 怎么序列化的知道吗？&#34;&gt;&lt;/a&gt;5. ArrayList 怎么序列化的知道吗？&lt;/h3&gt;&lt;p&gt;它重写了writeObject 方法用于自定义序列化：只序列化有效数据，因为实际存储的元素数量一般小于elementData 数组的容量，声明的时候也加了 transient 关键字防止被默认序列化。&lt;/p&gt;
+&lt;h3 id=&#34;6-HashMap实现原理？-高频&#34;&gt;&lt;a href=&#34;#6-HashMap实现原理？-高频&#34; class=&#34;headerlink&#34; title=&#34;6. HashMap实现原理？(高频)&#34;&gt;&lt;/a&gt;6. HashMap实现原理？(高频)&lt;/h3&gt;&lt;p&gt;JDK8之前是数组+链表。之后是数组+链表+红黑树。存储元素时，利用key的hashCode重新hash计算出元素在数组中的下标，如果两个key出现了相同的hash值（哈希冲突）：如果key相同，覆盖原值。 key不同，把key-value放入链表或红黑树中，链表的长度大于8并且数组长度大于64时链表转成红黑树。扩容resize时，红黑树的结点≤6就退化成链表。获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。它的初始容量16，加载因子0.75。创建时使用懒加载，不初始化容量。&lt;/p&gt;
+&lt;h3 id=&#34;7-HashMap的put方法的具体流程？-高频&#34;&gt;&lt;a href=&#34;#7-HashMap的put方法的具体流程？-高频&#34; class=&#34;headerlink&#34; title=&#34;7. HashMap的put方法的具体流程？(高频)&#34;&gt;&lt;/a&gt;7. HashMap的put方法的具体流程？(高频)&lt;/h3&gt;&lt;p&gt;第一步检查数组是否为空，首次put时，调用resize()初始化数组，默认容量为 16，负载因子为0.75。&lt;br&gt;第二步，计算键的哈希值，具体是将 键的hashCode 异或 hashCode 右移16位的值。这是为了减少哈希冲突，让元素分布更均匀。&lt;br&gt;第三步，根据键的哈希值计算数组索引，具体是将键的哈希值 与上 数组长度-1（等价于哈希值模数组长度，因为与运算的效率更高所以用与运算代替模运算，但前提是数组长度是2的N次幂）。&lt;br&gt;第四步，检查数组索引对应槽位的情况。如果为空，直接插入；如果不为空，用equals判断对应位置键是否已经存在，存在则更新值。如果对应位置是红黑树，插入树结点。是链表就遍历链表逐个用equals检查键是否存在，存在则更新值，遍历完后发现不存在则插入链表尾部，如果链表长度≥8且数组长度≥64，链表转成红黑树。&lt;/p&gt;
+&lt;p&gt;hashMap的寻址算法：扰动算法，通过hash方法，hashcode ^ hashcode &amp;lt;&amp;lt;&amp;lt; 16。&lt;br&gt;首先计算键的hashCode,再调用hash方法进行二次哈希，hashCode右移16位再和hashCode进行异或运算，减少哈希冲突，最后用哈希值 与 容量 -1 得到索引。&lt;/p&gt;
+&lt;h3 id=&#34;8-讲一讲HashMap的扩容机制-高频&#34;&gt;&lt;a href=&#34;#8-讲一讲HashMap的扩容机制-高频&#34; class=&#34;headerlink&#34; title=&#34;8. 讲一讲HashMap的扩容机制(高频)&#34;&gt;&lt;/a&gt;8. 讲一讲HashMap的扩容机制(高频)&lt;/h3&gt;&lt;p&gt;当哈希表中元素个数超过阈值时会触发扩容resize方法，这个阈值是 数组容量 * 负载因子,数组容量初始是16，负载因子默认是0.75。&lt;br&gt;扩容时：&lt;br&gt;第一步，创建一个新数组，容量为旧数组的2倍，具体是将旧容量左移1位得到新容量。&lt;br&gt;第二步，迁移元素，遍历旧数组的每个槽位，重新计算索引后放到新数组。如果槽位是单个节点，通过e.hash &amp;amp; (newCap新容量 - 1)计算新索引；如果是红黑树节点，拆分处理。如果是链表节点，将链表拆分为低位链和高位链，避免重新哈希带来性能损耗，如果 e.hash &amp;amp; oldCap &amp;#x3D;&amp;#x3D; 0（元素哈希值与上旧容量等于0）就是低位链，索引不变。如果不为0，就是高位链，索引变成 旧索引 + 旧容量。&lt;/p&gt;
+&lt;p&gt;为何HashMap的数组长度一定是2的次幂?&lt;br&gt;数组长度是 2 的幂次方时，hash % length和hash &amp;amp; (length - 1)的计算结果是一样的。不过按位与运算在性能上更具优势。计算索引时效率更高，扩容时效率更高。&lt;/p&gt;
+&lt;h3 id=&#34;9-HashMap-是线程安全的吗？&#34;&gt;&lt;a href=&#34;#9-HashMap-是线程安全的吗？&#34; class=&#34;headerlink&#34; title=&#34;9. HashMap 是线程安全的吗？&#34;&gt;&lt;/a&gt;9. HashMap 是线程安全的吗？&lt;/h3&gt;&lt;p&gt;不是。JDK7 中的 HashMap 使用的是头插法来处理链表，在多线程环境下扩容会出现环形链表，造成死循环。JDK 8 时通过尾插法修复了这个问题，扩容时会保持链表原来的顺序。多线程在进行 put 元素的时候，可能会导致元素丢失。因为put操作不是原子的。当多个线程同时检查到 “槽位为空” 或 “键不存在” 时，可能都决定写入，这样就可能导致元素先插入的元素被覆盖而丢失put 和 get 并发时，可能导致 get 为 null。线程 1 执行 put 时，因为元素个数超出阈值而扩容，线程 2 此时执行 get就可能获取不到元素。线程 1 执行完 table &amp;#x3D; newTab 之后，线程 2 中的 table 已经发生了改变，线程 2 去 get 索引 元素可能就 get 不到了。&lt;/p&gt;
+&lt;h2 id=&#34;JUC&#34;&gt;&lt;a href=&#34;#JUC&#34; class=&#34;headerlink&#34; title=&#34;JUC&#34;&gt;&lt;/a&gt;JUC&lt;/h2&gt;&lt;h3 id=&#34;1-阻塞队列的实现方式？&#34;&gt;&lt;a href=&#34;#1-阻塞队列的实现方式？&#34; class=&#34;headerlink&#34; title=&#34;1. 阻塞队列的实现方式？&#34;&gt;&lt;/a&gt;1. 阻塞队列的实现方式？&lt;/h3&gt;&lt;p&gt;阻塞队列是多线程环境下常用的数据结构，支持阻塞式的插入和删除，当队列满时，生产者线程会被阻塞直到有空间；当队列空时，消费者线程会被阻塞直到有元素。这种特性使其非常适合实现生产者 - 消费者模式。主要实现方式有3种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于 synchronized+wait&amp;#x2F;notify ，利用 Java 内置锁和 Object 类的等待机制。队列的 put 和 take 方法用 synchronized 修饰，当队列满时，生产者通过 wait () 进入等待状态；当队列空时，消费者同样 wait ()。操作完成后通过 notifyAll () 唤醒等待线程。优点是实现简单，缺点是功能单一，不支持公平性，且只有一个条件队列。&lt;/li&gt;
+&lt;li&gt;基于 ReentrantLock+Condition 的实现。这是 JDK 标准库（如ArrayBlockingQueue）采用的方式，比 synchronized 更灵活。通过 ReentrantLock 保证线程安全，同时创建两个 Condition 对象（notEmpty 和 notFull）分别管理消费者和生产者的等待队列。当队列满时，生产者在 notFull 上 await ()；当队列空时，消费者在 notEmpty 上 await ()。操作完成后针对性地 signal () 对应条件队列的线程。这种方式支持公平锁配置，且能精确唤醒特定类型的线程。&lt;/li&gt;
+&lt;li&gt;基于 CAS 操作的非阻塞实现。利用原子类（如 AtomicReference）通过 CAS 操作实现无锁化的并发控制，比如 ConcurrentLinkedQueue。通过循环重试的方式处理并发冲突，避免了线程阻塞和唤醒的开销，高并发场景下性能更好，但实现逻辑复杂，适合对性能要求极高的场景。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这几种实现各有侧重：synchronized 方式适合简单场景；ReentrantLock+Condition 兼顾功能与性能，是 JDK 标准实现的首选；CAS 方式适合高并发低延迟的场景。实际开发中通常用 JDK 提供的阻塞队列（如 ArrayBlockingQueue、LinkedBlockingQueue），它们内部基于 ReentrantLock+Condition 实现，已经过充分优化和测试，能满足绝大多数并发场景的需求。&lt;/p&gt;
+&lt;h2 id=&#34;开放性问题&#34;&gt;&lt;a href=&#34;#开放性问题&#34; class=&#34;headerlink&#34; title=&#34;开放性问题&#34;&gt;&lt;/a&gt;开放性问题&lt;/h2&gt;&lt;h3 id=&#34;1-先做个简单的自我介绍吧！&#34;&gt;&lt;a href=&#34;#1-先做个简单的自我介绍吧！&#34; class=&#34;headerlink&#34; title=&#34;1. 先做个简单的自我介绍吧！&#34;&gt;&lt;/a&gt;1. 先做个简单的自我介绍吧！&lt;/h3&gt;&lt;p&gt;面试官您好！我叫郝泽飞，是哈尔滨工程大学计算机专业的学生，现在在读研一，在校期间，我成绩专业排名前10%，大学期间参加了多个竞赛并取得奖项，通过了英语四六级。技术方面，大一期间我学习了计算机的基础知识，像数据结构，C++和JAVA的基础语法，大二以后开始学Java技术栈，比如Spring Boot、MyBatis-Plus、MySQL、Redis、RabbitMQ等，后来又做了一些项目，微服务架构的Pm-hub,大模型应用开发的派聪明。生活中我是一个比较积极乐观的人，我非常期待能在贵公司的开发岗位中，将所学的技术应用于实际业务，我的介绍完毕，谢谢！&lt;/p&gt;
+&lt;h3 id=&#34;2-说说你的这个pm-hub项目吧？&#34;&gt;&lt;a href=&#34;#2-说说你的这个pm-hub项目吧？&#34; class=&#34;headerlink&#34; title=&#34;2. 说说你的这个pm-hub项目吧？&#34;&gt;&lt;/a&gt;2. 说说你的这个pm-hub项目吧？&lt;/h3&gt;&lt;p&gt;（项目背景、解决问题、职责任务。2项目使用的技术栈、技术架构、是否使用微服务，项目具体功能细节。技术具体实现细节。项目存在的问题和完善解决方案。项目具体功能的优化（如查询是在数据库中扫表查询吗）项目最有挑战的模块，如何解决，项目增大10倍的qps，如何设计？项目上线后出现频繁fullGc，怎么解决？）&lt;br&gt;好的，这个项目是我（跟室友&amp;#x2F;同学&amp;#x2F;老师一起做的。&amp;#x2F;参考开源项目做的一个二次开发），做这个项目是为了……，考虑到—所以项目中用到了***，当时我负责的部分是。发现速度&amp;#x2F;可用性不够，进行了SQL优化，分布式锁，seata事务,skywalking监控等。第二个项目是……，因为最近AI比较流行，我就想学一些新技术，跟上时代的步伐，这个项目是参考开源项目，用了……技术栈，实现了……功能，优化，解决……问题。以上是我的项目介绍。&lt;/p&gt;
 &lt;h3 id=&#34;3-项目中遇到最大的困难？怎么解决的？&#34;&gt;&lt;a href=&#34;#3-项目中遇到最大的困难？怎么解决的？&#34; class=&#34;headerlink&#34; title=&#34;3. 项目中遇到最大的困难？怎么解决的？&#34;&gt;&lt;/a&gt;3. 项目中遇到最大的困难？怎么解决的？&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&#34;4-平时是怎么学习的？&#34;&gt;&lt;a href=&#34;#4-平时是怎么学习的？&#34; class=&#34;headerlink&#34; title=&#34;4. 平时是怎么学习的？&#34;&gt;&lt;/a&gt;4. 平时是怎么学习的？&lt;/h3&gt;&lt;p&gt;比如我学一门新技术吧，首先看官方文档，如果晦涩难懂就会找教程&amp;#x2F;视频，还会使用AI工具（豆包，chatGPT）详细解释辅助理解，然后做个demo用到项目中，大学期间我大多是在开源社区学习还有网课。&lt;/p&gt;
 &lt;h3 id=&#34;5-人生发展、最近五年职业规划&#34;&gt;&lt;a href=&#34;#5-人生发展、最近五年职业规划&#34; class=&#34;headerlink&#34; title=&#34;5. 人生发展、最近五年职业规划&#34;&gt;&lt;/a&gt;5. 人生发展、最近五年职业规划&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&#34;6-什么时候能到岗？&#34;&gt;&lt;a href=&#34;#6-什么时候能到岗？&#34; class=&#34;headerlink&#34; title=&#34;6. 什么时候能到岗？&#34;&gt;&lt;/a&gt;6. 什么时候能到岗？&lt;/h3&gt;&lt;h3 id=&#34;7-薪资要求？&#34;&gt;&lt;a href=&#34;#7-薪资要求？&#34; class=&#34;headerlink&#34; title=&#34;7. 薪资要求？&#34;&gt;&lt;/a&gt;7. 薪资要求？&lt;/h3&gt;&lt;h2 id=&#34;反问：&#34;&gt;&lt;a href=&#34;#反问：&#34; class=&#34;headerlink&#34; title=&#34;反问：&#34;&gt;&lt;/a&gt;反问：&lt;/h2&gt;&lt;h3 id=&#34;一面&#34;&gt;&lt;a href=&#34;#一面&#34; class=&#34;headerlink&#34; title=&#34;一面&#34;&gt;&lt;/a&gt;一面&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;部门主营业务和使用的技术栈是什么？&lt;/li&gt;
-&lt;li&gt;您觉得我的专业能力有哪些需要提升的&lt;/li&gt;
+&lt;li&gt;您觉得我的专业能力有哪些需要提升的？&lt;/li&gt;
 &lt;li&gt;刚才关于xx问题，我想问下您的思路。&lt;/li&gt;
 &lt;li&gt;面试一般多久会出通知和结果呢？&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;二面&#34;&gt;&lt;a href=&#34;#二面&#34; class=&#34;headerlink&#34; title=&#34;二面&#34;&gt;&lt;/a&gt;二面&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;面试候选人，尤其是校招生的时候，最看重什么？&lt;/li&gt;
 &lt;li&gt;您对进入您团队的成员的要求是什么？或者说需要怎样的品质胜任这个职位？&lt;/li&gt;
-&lt;li&gt;我很好奇职位的晋升机制和发展路径。公司对信任的培养是怎么样的&lt;/li&gt;
+&lt;li&gt;我很好奇职位的晋升机制和发展路径。公司对信任的培养是怎么样的？&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;HR面-三面&#34;&gt;&lt;a href=&#34;#HR面-三面&#34; class=&#34;headerlink&#34; title=&#34;HR面&amp;#x2F;三面&#34;&gt;&lt;/a&gt;HR面&amp;#x2F;三面&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;企业文化&lt;/li&gt;
@@ -74,8 +98,8 @@
 &lt;p&gt;&lt;strong&gt;数组转List受影响&lt;/strong&gt;，因为它的&lt;strong&gt;底层使用的Arrays类中的一个内部类ArrayList来构造的集合&lt;/strong&gt;，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，&lt;strong&gt;最终指向的都是同一个内存地址&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;List转数组不受影响&lt;/strong&gt;，在底层是它是进行了数组的拷贝。&lt;/p&gt;
 </content>
-        <category term="实现原理" />
         <category term="ArrayList" />
+        <category term="实现原理" />
         <updated>2025-07-19T08:55:58.136Z</updated>
     </entry>
     <entry>
@@ -159,8 +183,8 @@
 &lt;p&gt;获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。&lt;/p&gt;
 &lt;p&gt;源码：初始容量16，加载因子0.75，扩容&amp;#x3D;之积。懒加载，不初始化容量。&lt;/p&gt;
 </content>
-        <category term="HashMap" />
         <category term="实现原理" />
+        <category term="HashMap" />
         <updated>2025-07-19T08:55:15.936Z</updated>
     </entry>
     <entry>
