@@ -8,12 +8,12 @@
     <category term="实现原理" />
     <category term="HashMap" />
     <category term="线程安全" />
-    <category term="put方法" />
-    <category term="HashSet" />
-    <category term="HashTable" />
     <category term="Hexo" />
     <category term="博客" />
+    <category term="HashSet" />
+    <category term="HashTable" />
     <category term="扩容" />
+    <category term="put方法" />
     <entry>
         <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java高频面试题</title>
