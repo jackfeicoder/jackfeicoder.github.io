@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;java&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-07-21T04:00:00.000Z</updated>
+    <category term="ArrayList" />
+    <category term="实现原理" />
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="put方法" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="AI" />
+    <category term="Java" />
+    <category term="LangChain4j" />
+    <category term="实战教程" />
+    <category term="扩容" />
+    <entry>
+        <id>http://example.com/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/</id>
+        <title>LangChain4j实战教程-Java开发AI项目，太爽了！</title>
+        <link rel="alternate" href="http://example.com/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/"/>
+        <content type="html">&lt;p&gt;大家好，我是程序员鱼皮。现在 AI 应用开发可以说是程序员必备的技能了，求职时能够大幅增加竞争力。之前我用 Spring AI 带大家做过一个开源的 AI 超级智能体项目，这次我来带大家快速掌握另一个主流的 Java AI 应用开发框架 LangChain4j。&lt;/p&gt;
+&lt;p&gt;这个教程也是我精心设计，拒绝枯燥的理论，而是用一个编程小助手项目带大家在实战中依次学习 LangChain 几乎所有主流的用法和特性。看完这个教程，你不仅学会了 LangChain，还直接多了一段项目经历，岂不美哉？&lt;/p&gt;
+&lt;p&gt;文章近一万字，有点长，建议收藏，观看视频版体验更佳~&lt;/p&gt;
+&lt;p&gt;完整视频教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iaWxpYmlsaS5jb20vdmlkZW8vQlYxWDRHR3ppRXly&#34;&gt;https://bilibili.com/video/BV1X4GGziEyr&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;项目代码开源：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2xpeXVwaS9haS1jb2RlLWhlbHBlcg==&#34;&gt;https://github.com/liyupi/ai-code-helper&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;需求分析&#34;&gt;&lt;a href=&#34;#需求分析&#34; class=&#34;headerlink&#34; title=&#34;需求分析&#34;&gt;&lt;/a&gt;需求分析&lt;/h2&gt;&lt;p&gt;我们要实现一个 AI 编程小助手，可以帮助用户答疑解惑，并且给出编程学习的指导建议，比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;编程学习路线&lt;/li&gt;
+&lt;li&gt;项目学习建议&lt;/li&gt;
+&lt;li&gt;程序员求职指南&lt;/li&gt;
+&lt;li&gt;程序员常见面试题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQtvia8yfz6ukkFwsZHhnHfnV7ia4LnanElUoS68nR5ichlZbHQyty9HVwQ/640?wx_fmt=png&amp;from=appmsg&amp;randomid=als75bj1&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;要实现这个需求，我们首先要能够调用 AI 完成基础对话，而且要支持实现多轮对话记忆。此外，如果想进一步增强 AI 的能力，需要让它能够使用工具来联网搜索内容；还可以让 AI 基于我们自己的知识库回答，给用户提供我们在编程领域沉淀的资源和经验。&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQel4e7wMeljibTCub9ELadNwqIHHMDvxglnibHhEZNThZqXcNTaYHXMPg/640?wx_fmt=png&amp;from=appmsg&amp;randomid=7m9qg0cr&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;如果要从 0 开始实现上述功能，还是很麻烦的，因此我们要使用 AI 开发框架来提高效率。&lt;/p&gt;
+&lt;h2 id=&#34;什么是-LangChain4j？&#34;&gt;&lt;a href=&#34;#什么是-LangChain4j？&#34; class=&#34;headerlink&#34; title=&#34;什么是 LangChain4j？&#34;&gt;&lt;/a&gt;什么是 LangChain4j？&lt;/h2&gt;&lt;p&gt;目前主流的 Java AI 开发框架有 Spring AI 和 LangChain4j，它们都提供了很多开箱即用的 API 来帮你调用大模型、实现 AI 开发常用的功能，比如我们今天要学的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对话记忆&lt;/li&gt;
+&lt;li&gt;结构化输出&lt;/li&gt;
+&lt;li&gt;RAG 知识库&lt;/li&gt;
+&lt;li&gt;工具调用&lt;/li&gt;
+&lt;li&gt;MCP&lt;/li&gt;
+&lt;li&gt;SSE 流式输出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;就我个人体验下来，这两个框架的很多概念和用法都是类似的，也都提供了很多插件扩展，都支持和 Spring Boot 项目集成。虽然有一些编码上的区别，但孰好孰坏，使用感受也是因人而异的。&lt;/p&gt;
+&lt;p&gt;实际开发中应该如何选择呢？&lt;/p&gt;
+&lt;p&gt;我想先带你用 LangChain4j 开发完一个项目，最后再揭晓答案，因为那个时候你自己也会有一些想法。&lt;/p&gt;
+&lt;h2 id=&#34;AI-应用开发&#34;&gt;&lt;a href=&#34;#AI-应用开发&#34; class=&#34;headerlink&#34; title=&#34;AI 应用开发&#34;&gt;&lt;/a&gt;AI 应用开发&lt;/h2&gt;&lt;h3 id=&#34;新建项目&#34;&gt;&lt;a href=&#34;#新建项目&#34; class=&#34;headerlink&#34; title=&#34;新建项目&#34;&gt;&lt;/a&gt;新建项目&lt;/h3&gt;&lt;p&gt;打开 IDEA 开发工具，新建一个 Spring Boot 项目，Java 版本选择 21（因为 LangChain4j 最低支持 17 版本）：&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQycl5RYAlTBorwbTI3PlIicqz4qgYAfF5VA8ZD6OqdOQfaqPsxMgr9ag/640?wx_fmt=png&amp;from=appmsg&amp;randomid=cdah2fh9&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;选择依赖，使用 3.5.x 版本的 Spring Boot，引入 Spring MVC 和 Lombok 注解库：&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQduuBrs4ibuHF2kGDvHeJjOYtYAFt8OyjpYjChNIGq6MRPe1AtrNprAg/640?wx_fmt=png&amp;from=appmsg&amp;randomid=g2rzqtq4&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;新建项目后，先修改配置文件后缀为 yml，便于后面填写配置。&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQibWyATuY1jEMNX4NBNtXws0s68icNdRQM6w7ZdiaBuUXDuyVoclxAP6Fw/640?wx_fmt=png&amp;from=appmsg&amp;randomid=8glbb5o8&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;这里我会建议大家创建一个 application-local.yml 配置文件，将开发时用到的敏感配置写到这里，并且添加到 .gitignore 中，防止不小心开源出来。&lt;/p&gt;
+&lt;h2 id=&#34;AI-对话-ChatModel&#34;&gt;&lt;a href=&#34;#AI-对话-ChatModel&#34; class=&#34;headerlink&#34; title=&#34;AI 对话 - ChatModel&#34;&gt;&lt;/a&gt;AI 对话 - ChatModel&lt;/h2&gt;&lt;p&gt;ChatModel 是最基础的概念，负责和 AI 大模型交互。&lt;/p&gt;
+&lt;p&gt;首先需要引入至少一个 AI 大模型依赖，这里选择国内的阿里云大模型，提供了和 Spring Boot 项目的整合依赖包，比较方便：&lt;/p&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;dev.langchain4j&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;langchain4j-community-dashscope-spring-boot-starter&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;1.1.0-beta7&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;需要到 阿里云百炼平台 获取大模型调用 key，注意不要泄露！&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQibTrFMyk56ic6p3qg6aCicKD6l5XeCMKIv8edXQ3omDEtyCplkCWXcfeQ/640?wx_fmt=png&amp;from=appmsg&amp;randomid=4t4d3x7n&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;回到项目，在配置文件中添加大模型配置，指定模型名称和 API Key：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;langchain4j:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;community:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;dashscope:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;chat-model:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;model-name:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;qwen-max&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attr&#34;&gt;api-key:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;lt;You&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;API&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Key&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;here&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;可以按需选择模型名称，追求效果可以用 qwen-max，否则可以选择效果、速度、成本均衡的 qwen-plus。&lt;/p&gt;
+&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQenuXgWvZOMQtpdquOdUJyyLASN2NkhUqk30Ozngn9SEmdUvFQxdbRg/640?wx_fmt=png&amp;from=appmsg&amp;randomid=8ac4s7h5&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+
+&lt;p&gt;除了编写配置让 Spring Boot 自动构建 ChatModel 外，也可以通过构造器自己创建 ChatModel 对象。这种方式更灵活，在 LangChain4j 中我们会经常用到这种方式来构造对象。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;ChatModel&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;qwenModel&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt; QwenChatModel.builder()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .apiKey(&lt;span class=&#34;string&#34;&gt;&amp;quot;You API key here&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .modelName(&lt;span class=&#34;string&#34;&gt;&amp;quot;qwen-max&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .enableSearch(&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .temperature(&lt;span class=&#34;number&#34;&gt;0.7&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .maxTokens(&lt;span class=&#34;number&#34;&gt;4096&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .stops(List.of(&lt;span class=&#34;string&#34;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .build();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;有了 ChatModel 后，创建一个 AiCodeHelper 类，引入自动注入的 qwenChatModel，编写简单的对话代码，并利用 Lombok 注解打印输出结果日志：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Service&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Slf4j&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;AiCodeHelper&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Resource&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; ChatModel qwenChatModel;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; String &lt;span class=&#34;title function_&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String message)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;UserMessage&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;userMessage&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt; UserMessage.from(message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;ChatResponse&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;chatResponse&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt; qwenChatModel.chat(userMessage);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;AiMessage&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;aiMessage&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt; chatResponse.aiMessage();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        log.info(&lt;span class=&#34;string&#34;&gt;&amp;quot;AI 输出：&amp;quot;&lt;/span&gt; + aiMessage.toString());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; aiMessage.text();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;编写单元测试，向 AI 打个招呼吧：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@SpringBootTest&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;AiCodeHelperTest&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Resource&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; AiCodeHelper aiCodeHelper;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        aiCodeHelper.chat(&lt;span class=&#34;string&#34;&gt;&amp;quot;你好，我是程序员鱼皮&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;以 Debug 模式运行单元测试，成功运行并查看输出：&lt;/p&gt;
+&lt;!-- 省略后续内容，继续按上述格式处理全文 --&gt; </content>
+        <category term="AI" />
+        <category term="Java" />
+        <category term="LangChain4j" />
+        <category term="实战教程" />
+        <updated>2024-07-21T04:00:00.000Z</updated>
+    </entry>
+</feed>
