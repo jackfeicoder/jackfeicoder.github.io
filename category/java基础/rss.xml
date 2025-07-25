@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Mon, 21 Jul 2025 00:00:00 +0800</pubDate>
         <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0800</lastBuildDate>
-        <category>HashMap</category>
-        <category>put方法</category>
         <category>ArrayList</category>
         <category>实现原理</category>
-        <category>Hexo</category>
-        <category>博客</category>
+        <category>HashMap</category>
         <category>线程安全</category>
+        <category>put方法</category>
         <category>AI</category>
         <category>Java</category>
         <category>LangChain4j</category>
         <category>实战教程</category>
-        <category>扩容</category>
         <category>HashSet</category>
         <category>HashTable</category>
+        <category>扩容</category>
+        <category>Hexo</category>
+        <category>博客</category>
         <item>
             <guid isPermalink="true">http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
             <title>java高频面试题</title>
@@ -337,8 +337,8 @@
             <guid isPermalink="true">http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</guid>
             <title>HashMap实现原理？</title>
             <link>http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</link>
-            <category>HashMap</category>
             <category>实现原理</category>
+            <category>HashMap</category>
             <pubDate>Sat, 19 Jul 2025 16:55:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;摘要：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前是数组+链表，之后是数组+链表+红黑树。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
@@ -381,7 +381,7 @@
             <category>LangChain4j</category>
             <category>实战教程</category>
             <pubDate>Sun, 21 Jul 2024 12:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;大家好，我是程序员鱼皮。现在 AI 应用开发可以说是程序员必备的技能了，求职时能够大幅增加竞争力。之前我用 Spring AI 带大家做过一个开源的 AI 超级智能体项目，这次我来带大家快速掌握另一个主流的 Java AI 应用开发框架 LangChain4j。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;原文链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvN2NOaDduZGVpV2lIQmpua1Rrel9aZw==&#34;&gt;https://mp.weixin.qq.com/s/7cNh7ndeiWiHBjnkTkz_Zg&lt;/span&gt;&lt;br&gt;大家好，我是程序员鱼皮。现在 AI 应用开发可以说是程序员必备的技能了，求职时能够大幅增加竞争力。之前我用 Spring AI 带大家做过一个开源的 AI 超级智能体项目，这次我来带大家快速掌握另一个主流的 Java AI 应用开发框架 LangChain4j。&lt;/p&gt;
 &lt;p&gt;这个教程也是我精心设计，拒绝枯燥的理论，而是用一个编程小助手项目带大家在实战中依次学习 LangChain 几乎所有主流的用法和特性。看完这个教程，你不仅学会了 LangChain，还直接多了一段项目经历，岂不美哉？&lt;/p&gt;
 &lt;p&gt;文章近一万字，有点长，建议收藏，观看视频版体验更佳~&lt;/p&gt;
 &lt;p&gt;完整视频教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iaWxpYmlsaS5jb20vdmlkZW8vQlYxWDRHR3ppRXly&#34;&gt;https://bilibili.com/video/BV1X4GGziEyr&lt;/span&gt;&lt;/p&gt;
