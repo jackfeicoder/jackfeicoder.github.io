@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>杰克飞的博客 • Posts by &#34;游戏&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-07-21T04:00:00.000Z</updated>
+    <category term="HashMap" />
+    <category term="线程安全" />
+    <category term="ArrayList" />
+    <category term="实现原理" />
+    <category term="put方法" />
+    <category term="HashSet" />
+    <category term="HashTable" />
+    <category term="Hexo" />
+    <category term="博客" />
+    <category term="游戏" />
+    <category term="Steam" />
+    <category term="八股" />
+    <category term="牛客" />
+    <category term="扩容" />
+    <category term="AI" />
+    <category term="Java" />
+    <category term="LangChain4j" />
+    <category term="实战教程" />
+    <entry>
+        <id>http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/</id>
+        <title>学习版游戏网站</title>
+        <link rel="alternate" href="http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/"/>
+        <content type="html">&lt;p&gt;以下均为电脑游戏&lt;/p&gt;
+&lt;p&gt;gamebox：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9meTZiLmxhbnpvdXEuY29tL2lhTTQxMW9kODl3ZA==&#34;&gt;https://fy6b.lanzouq.com/iaM411od89wd&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;game520：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ2FtZXI1MjAuY29tLw==&#34;&gt;https://www.gamer520.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;GBT乐赏游戏空间：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2didGdhbWUueXNlcGFuLmNvbS8=&#34;&gt;http://gbtgame.ysepan.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;byrutor：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90aGVieXJ1dC5vcmcv&#34;&gt;https://thebyrut.org/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;小叽游戏：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGVhbXpnLmNvbS8=&#34;&gt;https://steamzg.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;wavse：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93YXZzZS5jb20v&#34;&gt;https://wavse.com/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;注意，网站内的广告切勿相信，直接忽略就好。以免造成不必要的损失！&lt;/p&gt;
+</content>
+        <category term="游戏" />
+        <category term="Steam" />
+        <updated>2024-07-21T04:00:00.000Z</updated>
+    </entry>
+</feed>

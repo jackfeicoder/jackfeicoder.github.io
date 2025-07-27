@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>杰克飞的博客 • Posts by &#34;八股&#34; tag</title>
+        <link>http://example.com</link>
+        <description>一个用Hexo搭建的个人博客</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 21 Jul 2024 12:00:00 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Jul 2024 12:00:00 +0800</lastBuildDate>
+        <category>HashMap</category>
+        <category>线程安全</category>
+        <category>ArrayList</category>
+        <category>实现原理</category>
+        <category>put方法</category>
+        <category>HashSet</category>
+        <category>HashTable</category>
+        <category>Hexo</category>
+        <category>博客</category>
+        <category>游戏</category>
+        <category>Steam</category>
+        <category>八股</category>
+        <category>牛客</category>
+        <category>扩容</category>
+        <category>AI</category>
+        <category>Java</category>
+        <category>LangChain4j</category>
+        <category>实战教程</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</guid>
+            <title>神品八股-付费14元</title>
+            <link>http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</link>
+            <category>八股</category>
+            <category>牛客</category>
+            <pubDate>Sun, 21 Jul 2024 12:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubm93Y29kZXIuY29tL2lzc3VlL3R1dG9yaWFsP3podWFubGFuSWQ9TVE3NW5CJnV1aWQ9NzVhM2Y1ZGEwODZmNDE3ODk3YTg0NjdlZjY2ZGRlYjQ=&#34;&gt;https://www.nowcoder.com/issue/tutorial?zhuanlanId=MQ75nB&amp;amp;uuid=75a3f5da086f417897a8467ef66ddeb4&lt;/span&gt;&lt;br&gt;面经陪练：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3djNTI5MDY1L2FydGljbGUvZGV0YWlscy8xNDg3NjAzMDY=&#34;&gt;https://blog.csdn.net/wc529065/article/details/148760306&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;京东 后端开发 暑期实习一面面经&lt;br&gt;Java集合&lt;br&gt;别用互联网思维写国企简历，这些模块要调整😧&lt;br&gt;Java SE&lt;br&gt;神品八股 | 专栏简介 | 基于1759篇面经、24139道八股题，精准提炼真实高频八股&lt;br&gt;JUC&lt;br&gt;JVM&lt;br&gt;Spring&lt;br&gt;MySQL&lt;br&gt;Redis&lt;br&gt;RabbitMQ&lt;br&gt;操作系统&lt;br&gt;计算机网络&lt;br&gt;设计模式 &lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

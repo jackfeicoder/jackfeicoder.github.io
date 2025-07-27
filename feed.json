@@ -67,8 +67,8 @@
             "date_published": "2025-07-19T08:55:15.936Z",
             "content_html": "<p>摘要：<br>HashMap底层是哈希表数据结构，Java8之前是数组+链表，之后是数组+链表+红黑树。</p>\n<span id=\"more\"></span>\n\n<p>正文：<br>HashMap底层是哈希表数据结构，Java8之前，是数组+链表。之后是数组+链表+红黑树。</p>\n<p>存储元素时，利用key的hashCode重新hash计算出元素在数组中的下标，如果两个key出现了相同的hash值（哈希冲突）：</p>\n<ul>\n<li>如果key相同，覆盖原值。</li>\n<li>key不同，把key-value放入链表或红黑树中，链表的长度大于8并且数组长度大于64时链表转成红黑树。扩容resize时，红黑树的结点≤6就退化成链表。</li>\n</ul>\n<p>获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。</p>\n<p>源码：初始容量16，加载因子0.75，扩容&#x3D;之积。懒加载，不初始化容量。</p>\n",
             "tags": [
-                "实现原理",
-                "HashMap"
+                "HashMap",
+                "实现原理"
             ]
         },
         {
@@ -91,6 +91,28 @@
             "tags": [
                 "Hexo",
                 "博客"
+            ]
+        },
+        {
+            "id": "http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/",
+            "url": "http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/",
+            "title": "学习版游戏网站",
+            "date_published": "2024-07-21T04:00:00.000Z",
+            "content_html": "<p>以下均为电脑游戏</p>\n<p>gamebox：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9meTZiLmxhbnpvdXEuY29tL2lhTTQxMW9kODl3ZA==\">https://fy6b.lanzouq.com/iaM411od89wd</span></p>\n<p>game520：<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuZ2FtZXI1MjAuY29tLw==\">https://www.gamer520.com/</span></p>\n<p>GBT乐赏游戏空间：<span class=\"exturl\" data-url=\"aHR0cDovL2didGdhbWUueXNlcGFuLmNvbS8=\">http://gbtgame.ysepan.com/</span></p>\n<p>byrutor：<span class=\"exturl\" data-url=\"aHR0cHM6Ly90aGVieXJ1dC5vcmcv\">https://thebyrut.org/</span></p>\n<p>小叽游戏：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9zdGVhbXpnLmNvbS8=\">https://steamzg.com/</span></p>\n<p>wavse：<span class=\"exturl\" data-url=\"aHR0cHM6Ly93YXZzZS5jb20v\">https://wavse.com/</span></p>\n<p>注意，网站内的广告切勿相信，直接忽略就好。以免造成不必要的损失！</p>\n",
+            "tags": [
+                "游戏",
+                "Steam"
+            ]
+        },
+        {
+            "id": "http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/",
+            "url": "http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/",
+            "title": "神品八股-付费14元",
+            "date_published": "2024-07-21T04:00:00.000Z",
+            "content_html": "<p>链接：<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cubm93Y29kZXIuY29tL2lzc3VlL3R1dG9yaWFsP3podWFubGFuSWQ9TVE3NW5CJnV1aWQ9NzVhM2Y1ZGEwODZmNDE3ODk3YTg0NjdlZjY2ZGRlYjQ=\">https://www.nowcoder.com/issue/tutorial?zhuanlanId=MQ75nB&amp;uuid=75a3f5da086f417897a8467ef66ddeb4</span><br>面经陪练：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3djNTI5MDY1L2FydGljbGUvZGV0YWlscy8xNDg3NjAzMDY=\">https://blog.csdn.net/wc529065/article/details/148760306</span></p>\n<p>京东 后端开发 暑期实习一面面经<br>Java集合<br>别用互联网思维写国企简历，这些模块要调整😧<br>Java SE<br>神品八股 | 专栏简介 | 基于1759篇面经、24139道八股题，精准提炼真实高频八股<br>JUC<br>JVM<br>Spring<br>MySQL<br>Redis<br>RabbitMQ<br>操作系统<br>计算机网络<br>设计模式 </p>\n",
+            "tags": [
+                "八股",
+                "牛客"
             ]
         },
         {
