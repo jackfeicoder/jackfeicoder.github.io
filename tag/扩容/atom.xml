@@ -15,17 +15,17 @@
     <category term="Java" />
     <category term="LangChain4j" />
     <category term="实战教程" />
-    <category term="游戏" />
-    <category term="Steam" />
     <category term="Hexo" />
     <category term="博客" />
-    <category term="八股" />
-    <category term="牛客" />
-    <category term="扩容" />
     <category term="算法" />
     <category term="力扣" />
     <category term="LeetCode" />
     <category term="刷题" />
+    <category term="游戏" />
+    <category term="Steam" />
+    <category term="八股" />
+    <category term="牛客" />
+    <category term="扩容" />
     <entry>
         <id>https://120115.xyz/2025/07/19/%E8%AE%B2%E4%B8%80%E8%AE%B2HashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6/</id>
         <title>讲一讲HashMap的扩容机制</title>
