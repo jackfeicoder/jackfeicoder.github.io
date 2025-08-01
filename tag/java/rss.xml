@@ -9,26 +9,26 @@
         <lastBuildDate>Sun, 21 Jul 2024 12:00:00 +0800</lastBuildDate>
         <category>HashMap</category>
         <category>线程安全</category>
-        <category>实现原理</category>
         <category>ArrayList</category>
-        <category>AI</category>
-        <category>Java</category>
-        <category>LangChain4j</category>
-        <category>实战教程</category>
-        <category>Hexo</category>
-        <category>博客</category>
+        <category>实现原理</category>
         <category>put方法</category>
         <category>HashSet</category>
         <category>HashTable</category>
+        <category>Hexo</category>
+        <category>博客</category>
         <category>算法</category>
         <category>力扣</category>
         <category>LeetCode</category>
         <category>刷题</category>
-        <category>八股</category>
-        <category>牛客</category>
+        <category>AI</category>
+        <category>Java</category>
+        <category>LangChain4j</category>
+        <category>实战教程</category>
         <category>游戏</category>
         <category>Steam</category>
         <category>扩容</category>
+        <category>八股</category>
+        <category>牛客</category>
         <item>
             <guid isPermalink="true">https://120115.xyz/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/</guid>
             <title>LangChain4j实战教程-Java开发AI项目，太爽了！</title>
@@ -50,10 +50,10 @@
 &lt;li&gt;程序员求职指南&lt;/li&gt;
 &lt;li&gt;程序员常见面试题&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQtvia8yfz6ukkFwsZHhnHfnV7ia4LnanElUoS68nR5ichlZbHQyty9HVwQ/640?wx_fmt=png&amp;from=appmsg&amp;randomid=als75bj1&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+&lt;img data-src=&#34;/images/d58d0458.jpg&#34; /&gt;
 
 &lt;p&gt;要实现这个需求，我们首先要能够调用 AI 完成基础对话，而且要支持实现多轮对话记忆。此外，如果想进一步增强 AI 的能力，需要让它能够使用工具来联网搜索内容；还可以让 AI 基于我们自己的知识库回答，给用户提供我们在编程领域沉淀的资源和经验。&lt;/p&gt;
-&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQel4e7wMeljibTCub9ELadNwqIHHMDvxglnibHhEZNThZqXcNTaYHXMPg/640?wx_fmt=png&amp;from=appmsg&amp;randomid=7m9qg0cr&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+&lt;img data-src=&#34;/images/07acfff9.jpg&#34; /&gt;
 
 &lt;p&gt;如果要从 0 开始实现上述功能，还是很麻烦的，因此我们要使用 AI 开发框架来提高效率。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-LangChain4j？&#34;&gt;&lt;a href=&#34;#什么是-LangChain4j？&#34; class=&#34;headerlink&#34; title=&#34;什么是 LangChain4j？&#34;&gt;&lt;/a&gt;什么是 LangChain4j？&lt;/h2&gt;&lt;p&gt;目前主流的 Java AI 开发框架有 Spring AI 和 LangChain4j，它们都提供了很多开箱即用的 API 来帮你调用大模型、实现 AI 开发常用的功能，比如我们今天要学的：&lt;/p&gt;
@@ -69,13 +69,13 @@
 &lt;p&gt;实际开发中应该如何选择呢？&lt;/p&gt;
 &lt;p&gt;我想先带你用 LangChain4j 开发完一个项目，最后再揭晓答案，因为那个时候你自己也会有一些想法。&lt;/p&gt;
 &lt;h2 id=&#34;AI-应用开发&#34;&gt;&lt;a href=&#34;#AI-应用开发&#34; class=&#34;headerlink&#34; title=&#34;AI 应用开发&#34;&gt;&lt;/a&gt;AI 应用开发&lt;/h2&gt;&lt;h3 id=&#34;新建项目&#34;&gt;&lt;a href=&#34;#新建项目&#34; class=&#34;headerlink&#34; title=&#34;新建项目&#34;&gt;&lt;/a&gt;新建项目&lt;/h3&gt;&lt;p&gt;打开 IDEA 开发工具，新建一个 Spring Boot 项目，Java 版本选择 21（因为 LangChain4j 最低支持 17 版本）：&lt;/p&gt;
-&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQycl5RYAlTBorwbTI3PlIicqz4qgYAfF5VA8ZD6OqdOQfaqPsxMgr9ag/640?wx_fmt=png&amp;from=appmsg&amp;randomid=cdah2fh9&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+&lt;img data-src=&#34;/images/84fb083d.jpg&#34; /&gt;
 
 &lt;p&gt;选择依赖，使用 3.5.x 版本的 Spring Boot，引入 Spring MVC 和 Lombok 注解库：&lt;/p&gt;
-&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQduuBrs4ibuHF2kGDvHeJjOYtYAFt8OyjpYjChNIGq6MRPe1AtrNprAg/640?wx_fmt=png&amp;from=appmsg&amp;randomid=g2rzqtq4&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+&lt;img data-src=&#34;/images/d7781d62.jpg&#34; /&gt;
 
 &lt;p&gt;新建项目后，先修改配置文件后缀为 yml，便于后面填写配置。&lt;/p&gt;
-&lt;img data-src=&#34;https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYK5rVrxmRUf1ibzQR638JNlQibWyATuY1jEMNX4NBNtXws0s68icNdRQM6w7ZdiaBuUXDuyVoclxAP6Fw/640?wx_fmt=png&amp;from=appmsg&amp;randomid=8glbb5o8&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; /&gt;
+&lt;img data-src=&#34;/images/b18ee1c8.jpg&#34; /&gt;
 
 &lt;p&gt;这里我会建议大家创建一个 application-local.yml 配置文件，将开发时用到的敏感配置写到这里，并且添加到 .gitignore 中，防止不小心开源出来。&lt;/p&gt;
 &lt;h2 id=&#34;AI-对话-ChatModel&#34;&gt;&lt;a href=&#34;#AI-对话-ChatModel&#34; class=&#34;headerlink&#34; title=&#34;AI 对话 - ChatModel&#34;&gt;&lt;/a&gt;AI 对话 - ChatModel&lt;/h2&gt;&lt;p&gt;ChatModel 是最基础的概念，负责和 AI 大模型交互。&lt;/p&gt;
