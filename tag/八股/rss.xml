@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>杰克飞的博客 • Posts by &#34;八股&#34; tag</title>
-        <link>http://example.com</link>
+        <link>https://120115.xyz</link>
         <description>一个用Hexo搭建的个人博客</description>
         <language>zh-CN</language>
         <pubDate>Sun, 21 Jul 2024 12:00:00 +0800</pubDate>
@@ -30,9 +30,9 @@
         <category>Steam</category>
         <category>扩容</category>
         <item>
-            <guid isPermalink="true">http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</guid>
+            <guid isPermalink="true">https://120115.xyz/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</guid>
             <title>神品八股-付费14元</title>
-            <link>http://example.com/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</link>
+            <link>https://120115.xyz/2024/07/21/%E7%89%9B%E5%AE%A2%E7%A5%9E%E5%93%81%E5%85%AB%E8%82%A1/</link>
             <category>八股</category>
             <category>牛客</category>
             <pubDate>Sun, 21 Jul 2024 12:00:00 +0800</pubDate>

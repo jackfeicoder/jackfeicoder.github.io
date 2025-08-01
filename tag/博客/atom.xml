@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://120115.xyz</id>
     <title>杰克飞的博客 • Posts by &#34;博客&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="https://120115.xyz" />
     <updated>2025-07-20T16:00:00.000Z</updated>
     <category term="HashMap" />
     <category term="线程安全" />
@@ -27,9 +27,9 @@
     <category term="Steam" />
     <category term="扩容" />
     <entry>
-        <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <id>https://120115.xyz/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java高频面试题</title>
-        <link rel="alternate" href="http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
         <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象、多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等。&lt;/p&gt;
 &lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean。引用数据类型有类，数组和接口。&lt;/p&gt;
 &lt;h3 id=&#34;3-面向对象编程有哪些特性？&#34;&gt;&lt;a href=&#34;#3-面向对象编程有哪些特性？&#34; class=&#34;headerlink&#34; title=&#34;3. 面向对象编程有哪些特性？&#34;&gt;&lt;/a&gt;3. 面向对象编程有哪些特性？&lt;/h3&gt;&lt;p&gt;封装、继承和多态。封装就是把一些属性和方法捆在一起形成一个类，我们可以实例化这个类变成对象，对象可以设置和获取属性，调用方法。开发中就是对象之间的交互。继承就是子类获得父类的所有属性和方法，子类还可以进行扩充或者方法重写。多态就是java运行时可以根据对象类型产生不同的结果。子类需要继承父类并重写父类方法，父类引用指向子类对象。&lt;/p&gt;
@@ -244,9 +244,9 @@
         <updated>2025-07-20T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/18/hello-world/</id>
+        <id>https://120115.xyz/2025/07/18/hello-world/</id>
         <title>你好，世界</title>
-        <link rel="alternate" href="http://example.com/2025/07/18/hello-world/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/18/hello-world/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;欢迎使用 Hexo！这是你的第一篇博客文章。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 

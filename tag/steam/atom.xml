@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://120115.xyz</id>
     <title>杰克飞的博客 • Posts by &#34;steam&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="https://120115.xyz" />
     <updated>2024-07-21T04:00:00.000Z</updated>
     <category term="HashMap" />
     <category term="线程安全" />
@@ -27,9 +27,9 @@
     <category term="Steam" />
     <category term="扩容" />
     <entry>
-        <id>http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/</id>
+        <id>https://120115.xyz/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/</id>
         <title>学习版游戏网站</title>
-        <link rel="alternate" href="http://example.com/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/"/>
+        <link rel="alternate" href="https://120115.xyz/2024/07/21/%E5%AD%A6%E4%B9%A0%E7%89%88%E6%B8%B8%E6%88%8F%E5%90%88%E9%9B%86/"/>
         <content type="html">&lt;p&gt;以下均为电脑游戏&lt;/p&gt;
 &lt;p&gt;gamebox：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9meTZiLmxhbnpvdXEuY29tL2lhTTQxMW9kODl3ZA==&#34;&gt;https://fy6b.lanzouq.com/iaM411od89wd&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;game520：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ2FtZXI1MjAuY29tLw==&#34;&gt;https://www.gamer520.com/&lt;/span&gt;&lt;/p&gt;

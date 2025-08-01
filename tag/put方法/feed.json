@@ -2,11 +2,11 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "杰克飞的博客 • All posts by \"put方法\" tag",
     "description": "一个用Hexo搭建的个人博客",
-    "home_page_url": "http://example.com",
+    "home_page_url": "https://120115.xyz",
     "items": [
         {
-            "id": "http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/",
-            "url": "http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/",
+            "id": "https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/",
+            "url": "https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/",
             "title": "HashMap的put方法的具体流程？",
             "date_published": "2025-07-19T08:55:24.937Z",
             "content_html": "<p>摘要：<br>详细解析HashMap的put方法执行流程，包括哈希计算、索引定位、冲突处理、链表与红黑树转换等。</p>\n<span id=\"more\"></span>\n\n<p>正文：<br><strong>第一步：检查数组是否为空</strong><br>首次<code>put</code>时，调用<code>resize()</code>初始化数组，默认容量为16，负载因子为0.75。</p>\n<p><strong>第二步：计算键的哈希值</strong><br>具体是将键的hashCode异或hashCode右移16位的值。这是为了减少哈希冲突，让元素分布更均匀。</p>\n<p><strong>第三步：根据键的哈希值计算数组索引</strong><br>具体是将键的哈希值与上数组长度-1（等价于哈希值模数组长度，因为与运算的效率更高，所以用与运算代替模运算，但前提是数组长度是2的N次幂）。</p>\n<p><strong>第四步：检查数组索引对应槽位的情况</strong><br>如果为空，直接插入；如果不为空，用equals判断对应位置键是否已经存在，存在则更新值。如果对应位置是红黑树，插入树结点。是链表就遍历链表逐个用equals检查键是否存在，存在则更新值，遍历完后发现不存在则插入链表尾部，如果链表长度≥8且数组长度≥64，链表转成红黑树。</p>\n<p><strong>只重写元素的equals方法没重写hashCode，put的时候会发生什么？</strong><br>如果只重写equals方法，没有重写hashCode方法，那么会导致equals相等的两个对象，hashCode不相等，这样的话，两个对象会被put到数组中不同的位置，导致get的时候，无法获取到正确的值。</p>\n",

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://120115.xyz</id>
     <title>杰克飞的博客 • Posts by &#34;put方法&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="https://120115.xyz" />
     <updated>2025-07-19T08:55:24.937Z</updated>
     <category term="HashMap" />
     <category term="线程安全" />
@@ -27,9 +27,9 @@
     <category term="Steam" />
     <category term="扩容" />
     <entry>
-        <id>http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/</id>
+        <id>https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/</id>
         <title>HashMap的put方法的具体流程？</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;详细解析HashMap的put方法执行流程，包括哈希计算、索引定位、冲突处理、链表与红黑树转换等。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 

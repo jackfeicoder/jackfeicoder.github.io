@@ -2,11 +2,11 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "杰克飞的博客 • All posts by \"线程安全\" tag",
     "description": "一个用Hexo搭建的个人博客",
-    "home_page_url": "http://example.com",
+    "home_page_url": "https://120115.xyz",
     "items": [
         {
-            "id": "http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/",
-            "url": "http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/",
+            "id": "https://120115.xyz/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/",
+            "url": "https://120115.xyz/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/",
             "title": "HashMap 是线程安全的吗？",
             "date_published": "2025-07-19T08:55:34.536Z",
             "content_html": "<p>摘要：<br>HashMap 不是线程安全的，多线程环境下可能出现死循环、数据丢失等问题。</p>\n<span id=\"more\"></span>\n\n<p>正文：<br>HashMap 不是线程安全的。</p>\n<ol>\n<li><p>JDK7 中的 HashMap 使用的是<strong>头插法</strong>来处理链表，在<strong>多线程环境下扩容会出现环形链表，造成死循环</strong>。JDK 8 时通过<strong>尾插法修复</strong>了这个问题，扩容时会保持链表原来的顺序。</p>\n</li>\n<li><p>多线程在进行 <strong>put 元素</strong>的时候，<strong>可能会导致元素丢失</strong>。因为put操作<strong>不是原子的</strong>。当多个线程同时检查到 “槽位为空” 或 “键不存在” 时，可能都决定写入，这样就可能导致元素<strong>先插入的元素被覆盖而丢失</strong>。</p>\n</li>\n<li><p>put 和 get 并发时，可能导致 get 为 null。线程 1 执行 put 时，因为元<strong>素个数超出阈值而扩容</strong>，线程 2 此时执行 get 就可能获取不到元素。线程 1 执行完 table &#x3D; newTab 之后，线程 2 中的 table 已经发生了改变，线程 2 去 get 索引元素可能就 get 不到了。</p>\n</li>\n</ol>\n",

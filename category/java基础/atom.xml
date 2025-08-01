@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://120115.xyz</id>
     <title>杰克飞的博客 • Posts by &#34;java基础&#34; category</title>
-    <link href="http://example.com" />
+    <link href="https://120115.xyz" />
     <updated>2025-07-20T16:00:00.000Z</updated>
     <category term="HashMap" />
     <category term="线程安全" />
@@ -27,9 +27,9 @@
     <category term="Steam" />
     <category term="扩容" />
     <entry>
-        <id>http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+        <id>https://120115.xyz/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
         <title>java高频面试题</title>
-        <link rel="alternate" href="http://example.com/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
         <content type="html">&lt;h2 id=&#34;JavaSE&#34;&gt;&lt;a href=&#34;#JavaSE&#34; class=&#34;headerlink&#34; title=&#34;JavaSE&#34;&gt;&lt;/a&gt;JavaSE&lt;/h2&gt;&lt;h3 id=&#34;1-什么是JAVA&#34;&gt;&lt;a href=&#34;#1-什么是JAVA&#34; class=&#34;headerlink&#34; title=&#34;1. 什么是JAVA?&#34;&gt;&lt;/a&gt;1. 什么是JAVA?&lt;/h3&gt;&lt;p&gt;Java 是一门面向对象的编程语言，吸收了 C++ 语言中大量的优点，但又抛弃了 C++ 中容易出错的地方，如垃圾回收、指针。比较重要的特点就是跨平台性，只需要在对应的平台上安装 JDK，就可以实现跨平台，在 Windows、macOS、Linux 操作系统上运行。还有面向对象、多线程，JVM等这些让Java变得高效。Java最适合用来做后端开发，有很多成熟的技术栈，比如Springboot,springcloud等。&lt;/p&gt;
 &lt;h3 id=&#34;2-Java-有哪些数据类型？&#34;&gt;&lt;a href=&#34;#2-Java-有哪些数据类型？&#34; class=&#34;headerlink&#34; title=&#34;2. Java 有哪些数据类型？&#34;&gt;&lt;/a&gt;2. Java 有哪些数据类型？&lt;/h3&gt;&lt;p&gt;基本数据类型和引用数据类型两大类。基本数据类型有：数值型（byte,short,int,long）、浮点型(float,double)、布尔型boolean。引用数据类型有类，数组和接口。&lt;/p&gt;
 &lt;h3 id=&#34;3-面向对象编程有哪些特性？&#34;&gt;&lt;a href=&#34;#3-面向对象编程有哪些特性？&#34; class=&#34;headerlink&#34; title=&#34;3. 面向对象编程有哪些特性？&#34;&gt;&lt;/a&gt;3. 面向对象编程有哪些特性？&lt;/h3&gt;&lt;p&gt;封装、继承和多态。封装就是把一些属性和方法捆在一起形成一个类，我们可以实例化这个类变成对象，对象可以设置和获取属性，调用方法。开发中就是对象之间的交互。继承就是子类获得父类的所有属性和方法，子类还可以进行扩充或者方法重写。多态就是java运行时可以根据对象类型产生不同的结果。子类需要继承父类并重写父类方法，父类引用指向子类对象。&lt;/p&gt;
@@ -244,9 +244,9 @@
         <updated>2025-07-20T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
+        <id>https://120115.xyz/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
         <title>ArrayList底层的实现原理是什么？</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/ArrayList%E5%BA%95%E5%B1%82%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;ArrayList底层是动态数组，支持自动扩容和高效随机访问。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -274,9 +274,9 @@
         <updated>2025-07-19T08:55:58.136Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+        <id>https://120115.xyz/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
         <title>HashSet，HashTable与HashMap的区别</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/HashSet%EF%BC%8CHashTable%E4%B8%8EHashMap%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;对比HashSet、HashMap、HashTable三者的底层结构、线程安全性、常用方法及应用场景。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -301,9 +301,9 @@
         <updated>2025-07-19T08:55:48.002Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/</id>
+        <id>https://120115.xyz/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/</id>
         <title>HashMap 是线程安全的吗？</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/HashMap-%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97%EF%BC%9F/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap 不是线程安全的，多线程环境下可能出现死循环、数据丢失等问题。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -322,9 +322,9 @@
         <updated>2025-07-19T08:55:34.536Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/</id>
+        <id>https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/</id>
         <title>HashMap的put方法的具体流程？</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/HashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B%EF%BC%9F/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;详细解析HashMap的put方法执行流程，包括哈希计算、索引定位、冲突处理、链表与红黑树转换等。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -339,9 +339,9 @@
         <updated>2025-07-19T08:55:24.937Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</id>
+        <id>https://120115.xyz/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/</id>
         <title>HashMap实现原理？</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/HashMap%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap底层是哈希表数据结构，Java8之前是数组+链表，之后是数组+链表+红黑树。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -359,9 +359,9 @@
         <updated>2025-07-19T08:55:15.936Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2025/07/19/%E8%AE%B2%E4%B8%80%E8%AE%B2HashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6/</id>
+        <id>https://120115.xyz/2025/07/19/%E8%AE%B2%E4%B8%80%E8%AE%B2HashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6/</id>
         <title>讲一讲HashMap的扩容机制</title>
-        <link rel="alternate" href="http://example.com/2025/07/19/%E8%AE%B2%E4%B8%80%E8%AE%B2HashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6/"/>
+        <link rel="alternate" href="https://120115.xyz/2025/07/19/%E8%AE%B2%E4%B8%80%E8%AE%B2HashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6/"/>
         <content type="html">&lt;p&gt;摘要：&lt;br&gt;HashMap 在元素个数超过阈值时会触发扩容（resize）操作，这个阈值是数组容量 * 负载因子。扩容的过程包括新数组创建和元素迁移。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 
@@ -378,9 +378,9 @@
         <updated>2025-07-19T08:28:05.350Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/</id>
+        <id>https://120115.xyz/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/</id>
         <title>LangChain4j实战教程-Java开发AI项目，太爽了！</title>
-        <link rel="alternate" href="http://example.com/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/"/>
+        <link rel="alternate" href="https://120115.xyz/2024/07/21/LangChain4j%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B-Java%E5%BC%80%E5%8F%91AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%A4%AA%E7%88%BD%E4%BA%86%EF%BC%81/"/>
         <content type="html">&lt;p&gt;原文链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvN2NOaDduZGVpV2lIQmpua1Rrel9aZw==&#34;&gt;https://mp.weixin.qq.com/s/7cNh7ndeiWiHBjnkTkz_Zg&lt;/span&gt;&lt;br&gt;大家好，我是程序员鱼皮。现在 AI 应用开发可以说是程序员必备的技能了，求职时能够大幅增加竞争力。之前我用 Spring AI 带大家做过一个开源的 AI 超级智能体项目，这次我来带大家快速掌握另一个主流的 Java AI 应用开发框架 LangChain4j。&lt;/p&gt;
 &lt;p&gt;这个教程也是我精心设计，拒绝枯燥的理论，而是用一个编程小助手项目带大家在实战中依次学习 LangChain 几乎所有主流的用法和特性。看完这个教程，你不仅学会了 LangChain，还直接多了一段项目经历，岂不美哉？&lt;/p&gt;
 &lt;p&gt;文章近一万字，有点长，建议收藏，观看视频版体验更佳~&lt;/p&gt;

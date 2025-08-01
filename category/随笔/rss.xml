@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>杰克飞的博客 • Posts by &#34;随笔&#34; category</title>
-        <link>http://example.com</link>
+        <link>https://120115.xyz</link>
         <description>一个用Hexo搭建的个人博客</description>
         <language>zh-CN</language>
         <pubDate>Fri, 18 Jul 2025 17:26:05 +0800</pubDate>
@@ -30,9 +30,9 @@
         <category>Steam</category>
         <category>扩容</category>
         <item>
-            <guid isPermalink="true">http://example.com/2025/07/18/hello-world/</guid>
+            <guid isPermalink="true">https://120115.xyz/2025/07/18/hello-world/</guid>
             <title>你好，世界</title>
-            <link>http://example.com/2025/07/18/hello-world/</link>
+            <link>https://120115.xyz/2025/07/18/hello-world/</link>
             <category>Hexo</category>
             <category>博客</category>
             <pubDate>Fri, 18 Jul 2025 17:26:05 +0800</pubDate>
