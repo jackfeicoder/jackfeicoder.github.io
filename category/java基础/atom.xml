@@ -4,27 +4,27 @@
     <title>杰克飞的博客 • Posts by &#34;java基础&#34; category</title>
     <link href="https://120115.xyz" />
     <updated>2025-07-20T16:00:00.000Z</updated>
-    <category term="HashMap" />
+    <category term="ArrayList" />
     <category term="实现原理" />
+    <category term="HashMap" />
     <category term="put方法" />
-    <category term="线程安全" />
     <category term="Hexo" />
     <category term="博客" />
-    <category term="ArrayList" />
+    <category term="线程安全" />
     <category term="AI" />
     <category term="Java" />
     <category term="LangChain4j" />
     <category term="实战教程" />
     <category term="HashSet" />
     <category term="HashTable" />
+    <category term="八股" />
+    <category term="牛客" />
     <category term="算法" />
     <category term="力扣" />
     <category term="LeetCode" />
     <category term="刷题" />
     <category term="游戏" />
     <category term="Steam" />
-    <category term="八股" />
-    <category term="牛客" />
     <category term="扩容" />
     <entry>
         <id>https://120115.xyz/2025/07/21/java%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
@@ -269,8 +269,8 @@
 &lt;p&gt;&lt;strong&gt;数组转List受影响&lt;/strong&gt;，因为它的&lt;strong&gt;底层使用的Arrays类中的一个内部类ArrayList来构造的集合&lt;/strong&gt;，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，&lt;strong&gt;最终指向的都是同一个内存地址&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;List转数组不受影响&lt;/strong&gt;，在底层是它是进行了数组的拷贝。&lt;/p&gt;
 </content>
-        <category term="实现原理" />
         <category term="ArrayList" />
+        <category term="实现原理" />
         <updated>2025-07-19T08:55:58.136Z</updated>
     </entry>
     <entry>
@@ -354,8 +354,8 @@
 &lt;p&gt;获取元素时，直接找到hash值对应下标，再判断key是否相同来找到值。&lt;/p&gt;
 &lt;p&gt;源码：初始容量16，加载因子0.75，扩容&amp;#x3D;之积。懒加载，不初始化容量。&lt;/p&gt;
 </content>
-        <category term="HashMap" />
         <category term="实现原理" />
+        <category term="HashMap" />
         <updated>2025-07-19T08:55:15.936Z</updated>
     </entry>
     <entry>
