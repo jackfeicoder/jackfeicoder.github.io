@@ -10,9 +10,9 @@
         <category>ArrayList</category>
         <category>实现原理</category>
         <category>HashMap</category>
+        <category>线程安全</category>
         <category>HashSet</category>
         <category>HashTable</category>
-        <category>线程安全</category>
         <category>put方法</category>
         <category>AI</category>
         <category>Java</category>
