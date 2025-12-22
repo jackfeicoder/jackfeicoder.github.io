@@ -3,7 +3,7 @@
     <id>https://120115.xyz</id>
     <title>杰克飞的博客</title>
     <link href="https://120115.xyz" />
-    <updated>2025-08-01T03:08:46.565Z</updated>
+    <updated>2025-12-22T06:42:15.659Z</updated>
     <category term="ArrayList" />
     <category term="实现原理" />
     <category term="HashMap" />
@@ -26,6 +26,106 @@
     <category term="八股" />
     <category term="牛客" />
     <category term="扩容" />
+    <entry>
+        <id>https://120115.xyz/2025/12/22/question/</id>
+        <title></title>
+        <link rel="alternate" href="https://120115.xyz/2025/12/22/question/"/>
+        <content type="html">&lt;h1 id=&#34;八股&#34;&gt;&lt;a href=&#34;#八股&#34; class=&#34;headerlink&#34; title=&#34;八股&#34;&gt;&lt;/a&gt;八股&lt;/h1&gt;&lt;p&gt;- Java基础：集合框架、多线程、IO、反射、注解 &lt;/p&gt;
+&lt;p&gt;JVM：内存模型、垃圾回收、类加载 &lt;/p&gt;
+&lt;p&gt;并发：synchronized、volatile、Lock、线程池、CAS &lt;/p&gt;
+&lt;p&gt;Spring：IOC、AOP、事务、SpringBoot 自动装配原理&lt;/p&gt;
+&lt;p&gt;MySQL：索引、事务、锁机制 &lt;/p&gt;
+&lt;p&gt;Redis：数据结构、持久化、缓存问题（穿透、击穿、雪崩）&lt;/p&gt;
+&lt;p&gt; 计算机网络：TCP&amp;#x2F;IP、HTTP&amp;#x2F;HTTPS -&lt;/p&gt;
+&lt;p&gt;操作系统：进程线程、死锁、内存管理&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;- 50%的时间：后端开发能力&lt;/strong&gt;（Java、框架、数据库、中间件） &lt;strong&gt;- 40%的时间：AI应用能力&lt;/strong&gt;（RAG、Prompt、Agent、LLM调用） &lt;strong&gt;- 10%的时间：AI基础知识&lt;/strong&gt;（了解原理，但不深入）&lt;/p&gt;
+&lt;h2 id=&#34;Java基础&#34;&gt;&lt;a href=&#34;#Java基础&#34; class=&#34;headerlink&#34; title=&#34;Java基础&#34;&gt;&lt;/a&gt;Java基础&lt;/h2&gt;&lt;p&gt;：掌握Java编程基础，阅读过HashMap源码，了解其扩容机制、哈希冲突、线程安全等；熟悉常见的设计模式，如工厂模式、代理模式、单例模式等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.java数据类型有哪些?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.面向对象编程有哪些特性？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.抽象类和接口有什么区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.为什么重写 equals 时必须重写 hashCode ⽅法？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5.String 和 StringBuilder、StringBuffer 的区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6.Java 中异常处理体系&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7.BIO、NIO、AIO 之间的区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8.什么是反射？应用？原理？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9.说说有哪些常见的集合框架？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;10.ArrayList 和 LinkedList 有什么区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;11.能说一下 HashMap 的底层数据结构吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;12.HashMap的put方法的具体流程？(高频)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;13.HashMap 是线程安全的吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;14.怎么解决 HashMap 线程不安全的问题呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;15.ConcurrentHashMap&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JDK7的put，get流程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JDK 8 中 ConcurrentHashMap 的实现原理？&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;MySQL&#34;&gt;&lt;a href=&#34;#MySQL&#34; class=&#34;headerlink&#34; title=&#34;MySQL&#34;&gt;&lt;/a&gt;MySQL&lt;/h2&gt;&lt;p&gt;:熟练使用MySQL数据库开发，熟悉MySQL索引、事务、事务隔离级别、锁机制和MVCC，具有一定的SQL&lt;br&gt;优化能力。&lt;/p&gt;
+&lt;h4 id=&#34;基础&#34;&gt;&lt;a href=&#34;#基础&#34; class=&#34;headerlink&#34; title=&#34;基础&#34;&gt;&lt;/a&gt;基础&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1.什么是 MySQL？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.两张表怎么进行连接？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.说一下数据库的三大范式？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.varchar 与 char 的区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5.blob 和 text 有什么区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7.in和exists的区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8.怎么存储 emoji?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9.介绍一下 MySQL 的常用命令&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说说索引和约束的创建修改命令？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;10.mysql中的一些基本函数，你知道哪些&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;11.SQL查询语句的执行顺序是怎么样的？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;12.给学生表、课程成绩表，求不存在01课程但存在02课程的学生的成绩&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;13.执行一条SQL请求的过程是什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;14.MySQL 有哪些常见存储引擎？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;日志&#34;&gt;&lt;a href=&#34;#日志&#34; class=&#34;headerlink&#34; title=&#34;日志&#34;&gt;&lt;/a&gt;日志&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;15.MySQL 日志文件有哪些？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;16.为什么要两阶段提交呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;SQL优化&#34;&gt;&lt;a href=&#34;#SQL优化&#34; class=&#34;headerlink&#34; title=&#34;SQL优化&#34;&gt;&lt;/a&gt;SQL优化&lt;/h4&gt;&lt;p&gt;执行时间超过该long_query_time参数的 SQL 就是慢 SQL，会被记录到慢查询日志中.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SQL 的执行过程了解吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何优化慢 SQL 呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;慢sql日志怎么开启？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你知道哪些方法来优化 SQL？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;explain平常有用过吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是索引？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;能简单说一下索引的分类吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;创建索引有哪些注意点？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;索引哪些情况下会失效呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;索引不适合哪些场景呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么 InnoDB 要使用 B+树作为索引？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一棵B+树能存储多少条数据呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么用 B+ 树而不用 B 树呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;聚族索引和非聚族索引有什么区别？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么情况下会触发回表？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是索引下推？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;锁&#34;&gt;&lt;a href=&#34;#锁&#34; class=&#34;headerlink&#34; title=&#34;锁&#34;&gt;&lt;/a&gt;锁&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;MySQL 中有哪几种锁？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;事务&#34;&gt;&lt;a href=&#34;#事务&#34; class=&#34;headerlink&#34; title=&#34;事务&#34;&gt;&lt;/a&gt;事务&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;事务的隔离级别有哪些？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MVCC 了解吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你们一般是怎么分库的呢？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那你们是怎么分表的？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;SQL-题&#34;&gt;&lt;a href=&#34;#SQL-题&#34; class=&#34;headerlink&#34; title=&#34;SQL 题&#34;&gt;&lt;/a&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qYXZhYmV0dGVyLmNuL3NpZGViYXIvc2FuZmVuZS9teXNxbC5odG1sI3NxbC0lRTklQTIlOTg=&#34;&gt;SQL 题&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Redis：数据结构、持久化、缓存问题（穿透、击穿、雪崩）&lt;/p&gt;
+&lt;h2 id=&#34;Redis&#34;&gt;&lt;a href=&#34;#Redis&#34; class=&#34;headerlink&#34; title=&#34;Redis&#34;&gt;&lt;/a&gt;Redis&lt;/h2&gt;&lt;p&gt;熟悉Redis的&lt;strong&gt;基本数据结构、主从同步原理和哨兵机制，以及持久化、过期删除策略、内存淘汰策略等特性，&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;熟悉缓存高并发场景，如缓存击穿、缓存穿透、缓存雪崩&lt;/strong&gt;等的解决方案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是Redis?&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;基本数据结构&#34;&gt;&lt;a href=&#34;#基本数据结构&#34; class=&#34;headerlink&#34; title=&#34;基本数据结构&#34;&gt;&lt;/a&gt;基本数据结构&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;Redis为什么快？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;能解释一下I&amp;#x2F;O多路复用模型？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;主从同步原理&#34;&gt;&lt;a href=&#34;#主从同步原理&#34; class=&#34;headerlink&#34; title=&#34;主从同步原理&#34;&gt;&lt;/a&gt;主从同步原理&lt;/h4&gt;&lt;h4 id=&#34;哨兵机制&#34;&gt;&lt;a href=&#34;#哨兵机制&#34; class=&#34;headerlink&#34; title=&#34;哨兵机制&#34;&gt;&lt;/a&gt;哨兵机制&lt;/h4&gt;&lt;h4 id=&#34;持久化&#34;&gt;&lt;a href=&#34;#持久化&#34; class=&#34;headerlink&#34; title=&#34;持久化&#34;&gt;&lt;/a&gt;持久化&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;redis做为缓存，数据的持久化是怎么做的？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;过期删除策略&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;内存淘汰策略&#34;&gt;&lt;a href=&#34;#内存淘汰策略&#34; class=&#34;headerlink&#34; title=&#34;内存淘汰策略&#34;&gt;&lt;/a&gt;内存淘汰策略&lt;/h4&gt;&lt;h4 id=&#34;缓存和数据库一致性？&#34;&gt;&lt;a href=&#34;#缓存和数据库一致性？&#34; class=&#34;headerlink&#34; title=&#34;缓存和数据库一致性？&#34;&gt;&lt;/a&gt;缓存和数据库一致性？&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;那再来说说为什么要删除缓存而不是更新缓存？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那再说说为什么要先更新数据库，再删除缓存？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;缓存穿透、缓存击穿、缓存雪崩&#34;&gt;&lt;a href=&#34;#缓存穿透、缓存击穿、缓存雪崩&#34; class=&#34;headerlink&#34; title=&#34;缓存穿透、缓存击穿、缓存雪崩&#34;&gt;&lt;/a&gt;缓存穿透、缓存击穿、缓存雪崩&lt;/h4&gt;&lt;h2 id=&#34;Spring&#34;&gt;&lt;a href=&#34;#Spring&#34; class=&#34;headerlink&#34; title=&#34;Spring&#34;&gt;&lt;/a&gt;Spring&lt;/h2&gt;&lt;h1 id=&#34;项目&#34;&gt;&lt;a href=&#34;#项目&#34; class=&#34;headerlink&#34; title=&#34;项目&#34;&gt;&lt;/a&gt;项目&lt;/h1&gt;&lt;h2 id=&#34;灵知问答&#34;&gt;&lt;a href=&#34;#灵知问答&#34; class=&#34;headerlink&#34; title=&#34;灵知问答&#34;&gt;&lt;/a&gt;灵知问答&lt;/h2&gt;&lt;p&gt;（LingQA）-基于 RAG 的智能问答与知识检索系统&lt;/p&gt;
+&lt;h4 id=&#34;项目介绍&#34;&gt;&lt;a href=&#34;#项目介绍&#34; class=&#34;headerlink&#34; title=&#34;项目介绍&#34;&gt;&lt;/a&gt;项目介绍&lt;/h4&gt;&lt;p&gt; &lt;strong&gt;你做的派聪明RAG知识库项目，它主要是做什么的？你想通过它解决一个什么样的问题或者说有什么应用场景吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-文件上传&#34;&gt;&lt;a href=&#34;#1-文件上传&#34; class=&#34;headerlink&#34; title=&#34;1.文件上传&#34;&gt;&lt;/a&gt;1.文件上传&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1.基于Kafka解耦文件上传、处理与向量化流程，实现分片上传与断点续传；使用Redis的Bitmap存储分片状态，并通过MinIO按照MD5进行分片合并。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-流式显示&#34;&gt;&lt;a href=&#34;#2-流式显示&#34; class=&#34;headerlink&#34; title=&#34;2.流式显示&#34;&gt;&lt;/a&gt;2.流式显示&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;2.基于WebSocket实现前端和后端之间的长连接通信通道，并结合DeepSeek的StreamAPl实现流式响应返回，只要后端有新的内容到达，前端就即时将文本逐步拼接显示，用户看到的就是一个“打字机”式的逐字生成过程。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;这种‘流式响应’或‘打字机效果’，在技术上是如何实现的？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;它和我们更常用的HTTP请求相比，有什么本质区别？为什么在这个场景下，必须用WebSocket？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WebSocket连接是长连接，它比HTTP要脆弱。如果用户的网络抖动一下，连接断了，会发生什么？你们有什么异常处理和重连机制吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;WebSocket连接建立时，如何知道是哪个用户在和我聊天？它的身份认证是怎么做的？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3-Redis历史对话&#34;&gt;&lt;a href=&#34;#3-Redis历史对话&#34; class=&#34;headerlink&#34; title=&#34;3.Redis历史对话&#34;&gt;&lt;/a&gt;3.Redis历史对话&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;3.采用基于Redis的对话历史管理机制，每个用户都有一个唯一的会话ID，所有的对话内容都按照时间顺序存在Redis中，并设置了7天的过期时间，以便在多轮对话中保证上下文信息的完整性。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;聊天助手能记住我们上一轮聊天的内容。这种‘多轮对话’的能力，背后需要什么样的技术来支撑？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;6.为什么选择Redis来存储对话历史，而不是直接存入MySQL数据库？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;能详细描述一下你在Redis里是如何设计数据结构的吗？比如，如何找到一个用户的对话历史？&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4-SpingSecurity-RBAC&#34;&gt;&lt;a href=&#34;#4-SpingSecurity-RBAC&#34; class=&#34;headerlink&#34; title=&#34;4.SpingSecurity-RBAC&#34;&gt;&lt;/a&gt;4.SpingSecurity-RBAC&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;4.利用SpringSecurity+JWT实现基于组织标签的RBAC的多级权限系统，通过用户角色、组织归属和文件属性的权限过滤，实现精细化的文档访问控制，确保敏感数据安全。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;面试题：派聪明的 RBAC 还能继续优化吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;项目中的jwt token使用那哪种类型的token（长token还是短token， access token还是refresh token）&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;追问：jwt 不支持续期的话,会不会用户还在使用中，结果登录失效了？&lt;/strong&gt; &lt;/p&gt;
+&lt;h4 id=&#34;5-ES-向量&#34;&gt;&lt;a href=&#34;#5-ES-向量&#34; class=&#34;headerlink&#34; title=&#34;5.ES+向量&#34;&gt;&lt;/a&gt;5.ES+向量&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;5.利用Elasticsearch+IK分词器对知识库文档进行索引I和向量检索，支持Word、PDF和TXT等多种文本类型;并集成阿里百炼Embedding模型进行文本到向量的转换，支持2048维；再结合ES的KNN向量召回、关键词过滤和BM25重排序实现「关键词+语义」的双引|擎搜索。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.当一个用户在搜索框里输入一句话然后点击搜索，系统大致会经历一个怎样的处理流程？&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;码农帮（CoderHub）&#34;&gt;&lt;a href=&#34;#码农帮（CoderHub）&#34; class=&#34;headerlink&#34; title=&#34;码农帮（CoderHub）&#34;&gt;&lt;/a&gt;码农帮（CoderHub）&lt;/h2&gt;</content>
+        <updated>2025-12-22T06:42:15.659Z</updated>
+    </entry>
     <entry>
         <id>https://120115.xyz/2025/08/01/leetcodeHot100%E5%88%B7%E9%A2%98%E6%96%B9%E5%BC%8F_%E7%AE%80%E6%B4%81%E7%89%88/</id>
         <title>力扣算法Hot100刷题路线</title>
